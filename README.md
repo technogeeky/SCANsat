@@ -1,13 +1,20 @@
-## [**SCANsat**][top]: Real Scanning, Real Science, at Warp Speed!
-![scan your planetoid like the big boys do][bigmap-scan-10000x]
-###### **Example SAR scan of Kerbin at 1000x and then 10,000x warp**
+### [**SCANsat**][top]: Real Scanning, Real Science, Warp Speed!
+[![][shield:license-bsd]][SCANsat:rel-license]&nbsp;
+[![][shield:jenkins-rel]][SCANsat:rel-jenkins]&nbsp;
+[![][shield:support-ksp]][KSP:developers]&nbsp;
+[![][shield:support-rpm]][RPM:release]&nbsp;
+[![][shield:support-ket]][Kethane:release]&nbsp;
+[![][shield:support-ors]][ORS:release]
 
-![May Your Tentacles Orbit in Peace][SCANsat:logo]
+![scan your planetoid like the big boys do][bigmap-scan-10000x]
+> ###### **Example SAR scan of Kerbin at 1000x and then 10,000x warp**
 
 **Table of Contents**
 ------------------------------------------
 
-* [0. Maintainers, Authors, Contributors, and Licenses][0]
+* [0. People, Facts, and FAQs][0]
+  * [a. Facts][0a]
+  * [b. FAQs][0b]
 * [1. Installation and Interoperability][1]
   * [a. Installation][1a]
   * [b. GameData Layout][1b]
@@ -44,7 +51,7 @@ This means you should expect that it **may not work**, and you should be unsurpr
 
 Disclaimer aside, this add-on is widely used and it **usually** works just fine.
 
-### [:top:][top] 0. Maintainers, Authors, Contributors, and Licenses
+### [:top:][top] 0. People, Facts, and FAQs
 ------------------------------------------
 #### Maintainers 
 The current maintainer is:
@@ -52,13 +59,16 @@ The current maintainer is:
 
 Maintainers are the people who you should complain to if there is something wrong.
 
-Complaints in various forms are prioritized as such:
+Complaints in various forms are prioritized as follows:
 
-1. [Pull Requests][SCANsat:pulls] are given the **highest** priority possible. ~ 24 hour response
-2. [Issues][SCANsat:issues] are given *higher* priority than other complaints. ~ 2 day response
-3. [Forum Posts][SCANsat:release] are given a medium priority. ~ 1 week response
-4. [Forum Private Messages](http://forum.kerbalspaceprogram.com/private.php) are given a low priority. We might forget!
-5. [Reddit Posts and PMs][KSP:reddit] are the lowest priority. We often lurk and don't login!
+  1. [Pull Requests][SCANsat:pulls] are given the **highest** priority possible. ~ 24 hour response
+  2. [Issues][SCANsat:issues] are given *higher* priority than other complaints. ~ 2 day response
+  3. [E-Mails][SCANsat:email] will be answered as soon as possible (it's a forwarded list) ~ 3 day response
+  4. [Forum Posts][SCANsat:rel-thread] are given a medium priority. ~ 1 week response
+  5. [Forum Private Messages](http://forum.kerbalspaceprogram.com/private.php) are given a low priority. We might forget!
+  6. [Reddit Posts and PMs][KSP:reddit] are the lowest priority. We often lurk and don't login!
+
+If you submit a well-reasoned pull request, you may even trigger a new release!
 
 #### Authors
 The current authors include:
@@ -77,9 +87,33 @@ In addition to the authors, the following people have contributed:
 
 #### Licenses
 
-For licensing information, please see the [included LICENSE.txt][SCANsat:licenses] file.
+For licensing information, please see the [included LICENSE.txt][SCANsat:rel-license] file.
 
 [Source Code][SCANsat:source] is available, as some licenses may require.
+
+### [:top:][top] a. Facts
+------------------------------------------
+:heavy_exclamation_mark:
+
+### [:top:][top] b. FAQs
+------------------------------------------
+  * What does SCANsat do?
+    * It allows you to scan planetary bodies for terrain, biome, and resource information and generate various kinds of maps.
+  * How does SCANsat affect gameplay?
+    * It allows you to see surface details from orbit from an interactive, zoom-able map. This will help you plan your missions (for example, landing near a divider between two or three biomes) and provide critical information you need to attempt a safe landing (for instance, the slope map will help you avoid treacherous hills)
+  * Will this version break my existing scans from older versions of SCANsat?
+    * **No!** This version is completely backwards compatible, and you current scanning state (which is stored in persistent.sfs) will be safe and sound. Nevertheless, you should make a backup copy of your game before upgading any mod.
+  * Do I need to attach a part to my vessel to use SCANsat?
+    * **No, but...**. You can view existing maps from any vessel, but you need to attach a scanner to add new data to the maps.
+  * [Career Mode] Does SCANsat give us science points?
+    * **Yes!** For each type of map, if you scan at least 30% of the surface, you can yse Data for partial science points; up until the maximum value at 95% map coverage.
+  * [Career Mode] Is it integrated into the tech tree?
+    * **Yes!** This link tells you which nodes unlock which parts in the tech tree.
+  * [Contracts] Does SCANsat offer contracts to complete?
+    * **No.** This is a planned feature.
+  * Can you add <some feature or change> to SCANsat?
+    * **Probably!** First, check the issues page to see if it's already been requested. If not, add a new issue. Even better, attempt to add the feature yourself and submit a pull request. We'll catch the bugs for you!
+
 
 
 ### [:top:][top] 1. Installation and Interoperability 
@@ -110,8 +144,8 @@ S.C.A.N. is proud to collaborate with other KSP modding teams. Following is a ta
 
 As of the following versions:
 * **SCANsat**
-  * [x] [**v8.0**][scansat:release] SCANsat Release **version: v8.0**
-  * [x] [**v9.0**][scansat:dev] SCANsat Dev **version: v9.0**
+  * [x] [**v8.0**][SCANsat:rel-thread] SCANsat Release **version: v8.0**
+  * [x] [**v9.0**][SCANsat:dev-thread] SCANsat Dev **version: v9.0**
 
 **SCANsat** is built against the following mods. **MM**, **RPM**, and **Toolbar** are all **soft** dependencies. This means your experience with SCANsat will be enhanced if you are using these mods, but they are not necessary.
 
@@ -207,16 +241,13 @@ Solid GREEN means you're in an ideal orbit. Notice the larger swath width on the
 
 In these examples, the SAR and Multi sensors are not very well matched. Because the SAR sensors is ideal above 750km, and becuase it has a large field of view penalty if it's down near the ideal for Multi (250km), these sensors probably should not be used on the same scanner.
 
-![][small-mismatch1]
+BIO and ANOM are ideal, but HI is not! | HI is ideal, but BIO and ANOM are off!
+---|---
+![][small-mismatch1] | ![][small-mismatch2]
 
-![][small-mismatch2]
-
-
-###### SAR scanner with a thin swath width due to low altitude
-![][small-scan-color]
-
-###### RADAR scanner with an ideal swath width
-![][small-scan-bw]
+SAR (HI) has thin swaths due to low alt. | Multi and RADAR have similar ideal swaths
+--- | ---
+![][small-scan-color] | ![][small-scan-bw]
 
 The mapping interface consists of a small-ish map of the planet, as far as it has been scanned in your current game. It scans and updates quickly and shows positions of the active vessel, as well as other scanning vessels in orbit around the same planet. Orbital information is also provided. For a slower but more detailed view, see the **[big map][4]**.
 
@@ -324,6 +355,10 @@ sneaky then they can of course be sneaky.
 ------------------------------------------
 
 
+
+
+
+
 [technogeeky]: http://forum.kerbalspaceprogram.com/members/110153-technogeeky
 [DMagic]: http://forum.kerbalspaceprogram.com/members/59127-DMagic
 [damny]: http://forum.kerbalspaceprogram.com/members/80692-damny
@@ -365,61 +400,130 @@ sneaky then they can of course be sneaky.
 [bigmap-anim]: http://i.imgur.com/kxyl8xR.gif
 
 
-[top]: https://github.com/S-C-A-N/SCANsat#table-of-contents
-[0]: https://github.com/S-C-A-N/SCANsat#top-0-maintainers-authors-contributors-and-licenses
-[1]: https://github.com/S-C-A-N/SCANsat#top-1-installation-and-interoperability
-[1a]: https://github.com/S-C-A-N/SCANsat#top-a-installation
-[1b]: https://github.com/S-C-A-N/SCANsat#top-b-gamedata-layout
-[1c]: https://github.com/S-C-A-N/SCANsat#top-c-other-add-ons
-[2]: https://github.com/S-C-A-N/SCANsat#top-2-types-of-scans
-[2a]: https://github.com/S-C-A-N/SCANsat#top-a-altimetry
-[2b]: https://github.com/S-C-A-N/SCANsat#top-b-biome
-[2c]: https://github.com/S-C-A-N/SCANsat#top-c-anomaly
-[2d]: https://github.com/S-C-A-N/SCANsat#top-d-resources
-[2d1]: https://github.com/S-C-A-N/SCANsat#top-1-kethane
-[2d2]: https://github.com/S-C-A-N/SCANsat#top-2-ors
-[3]: https://github.com/S-C-A-N/SCANsat#top-3-basic-usage
-[3a]: https://github.com/S-C-A-N/SCANsat#top-3a-faq-finding-a-good-altitude
-[3b]: https://github.com/S-C-A-N/SCANsat#top-3b-mismatched-scanners
-[4]: https://github.com/S-C-A-N/SCANsat#top-4-big-map
-[5]: https://github.com/S-C-A-N/SCANsat#top-5-parts-and-sensor-types
-[5a]: https://github.com/S-C-A-N/SCANsat#top-a-the-radar-altimetry-sensor
-[5b]: https://github.com/S-C-A-N/SCANsat#top-b-the-sar-altimetry-sensor
-[5c]: https://github.com/S-C-A-N/SCANsat#top-c-the-multispectral-sensor
-[5d]: https://github.com/S-C-A-N/SCANsat#top-d-been-there-done-that
-[5e]: https://github.com/S-C-A-N/SCANsat#top-e-maptraq-deprecated
-[6]: https://github.com/S-C-A-N/SCANsat#top-6-career-mode-research-and-development
-[6a]: https://github.com/S-C-A-N/SCANsat#top-6aminimum-scan-for-science
-[6b]: https://github.com/S-C-A-N/SCANsat#top-6b-getting-maximum-science
-[7]: https://github.com/S-C-A-N/SCANsat#top-7-background-scanning
-[8]: https://github.com/S-C-A-N/SCANsat#top-8-time-warp
-[9]: https://github.com/S-C-A-N/SCANsat#top-9-note-concerning-data-sources
+[top]: ./README.md#table-of-contents
+[0]: ./README.md#top-0-people-facts-and-faqs
+[0a]: ./README.md#top-a-facts
+[0b]:./README/md#top-b-faqs
+[1]: ./README.md#top-1-installation-and-interoperability
+[1a]: ./README.md#top-a-installation
+[1b]: ./README.md#top-b-gamedata-layout
+[1c]: ./README.md#top-c-other-add-ons
+[2]: ./README.md#top-2-types-of-scans
+[2a]: ./README.md#top-a-altimetry
+[2b]: ./README.md#top-b-biome
+[2c]: ./README.md#top-c-anomaly
+[2d]: ./README.md#top-d-resources
+[2d1]: ./README.md#top-1-kethane
+[2d2]: ./README.md#top-2-ors
+[3]: ./README.md#top-3-basic-usage
+[3a]: ./README.md#top-3a-faq-finding-a-good-altitude
+[3b]: ./README.md#top-3b-mismatched-scanners
+[4]: ./README.md#top-4-big-map
+[5]: ./README.md#top-5-parts-and-sensor-types
+[5a]: ./README.md#top-a-the-radar-altimetry-sensor
+[5b]: ./README.md#top-b-the-sar-altimetry-sensor
+[5c]: ./README.md#top-c-the-multispectral-sensor
+[5d]: ./README.md#top-d-been-there-done-that
+[5e]: ./README.md#top-e-maptraq-deprecated
+[6]: ./README.md#top-6-career-mode-research-and-development
+[6a]: ./README.md#top-6aminimum-scan-for-science
+[6b]: ./README.md#top-6b-getting-maximum-science
+[7]: ./README.md#top-7-background-scanning
+[8]: ./README.md#top-8-time-warp
+[9]: ./README.md#top-9-note-concerning-data-sources
 
+[shield:license-bsd]: http://img.shields.io/:license-bsd-blue.svg
+[shield:license-mit]: http://img.shields.io/:license-mit-a31f34.svg
+ 
+[shield:jenkins-dev]: http://img.shields.io/jenkins/s/https/ksp.sarbian.com/jenkins/SCANsat-dev.svg
+[shield:jenkins-rel]: http://img.shields.io/jenkins/s/https/ksp.sarbian.com/jenkins/SCANsat-release.svg
+[shield:jenkins-ket]: http://img.shields.io/jenkins/s/https/ksp.sarbian.com/jenkins/SCANsat-kethane.svg
+[shield:jenkins-ors]: http://img.shields.io/jenkins/s/https/ksp.sarbian.com/jenkins/SCANsat-openresourcesystem.svg
+[shield:support-ksp]: http://img.shields.io/badge/for%20KSP-v0.23.5%20--%20v0.24.2-bad455.svg
+[shield:support-rpm]: http://img.shields.io/badge/for%20RPM-v0.18.2-a31f34.svg
+[shield:support-ket]: http://img.shields.io/badge/for%20Kethane-v8.8.8.8-brightgreen.svg
+[shield:support-ors]: http://img.shields.io/badge/for%20ORS-v1.1.0-000000.svg
+
+[shield:gittip-tg-img]: http://img.shields.io/gittip/technogeeky.png
+[shield:gittip-tg]: https://www.gittip.com/technogeeky/
+[shield:github-issues]: http://img.shields.io/github/issues/technogeeky/SCANsat.svg
+
+[SCANsat:organization]: https://github.com/S-C-A-N
+[SCANsat:logo]: http://i.imgur.com/GArPFFB.png
+[SCANsat:logo-square]: http://i.imgur.com/GArPFFB.png?1
 [SCANsat:issues]: https://github.com/S-C-A-N/SCANsat/issues
 [SCANsat:pulls]: https://github.com/S-C-A-N/SCANsat/pulls
-[SCANsat:source]: https://github.com/S-C-A-N/SCANsat
-[SCANsat:licenses]: https://github.com/S-C-A-N/SCANsat/blob/master/LICENSE.txt
-[SCANsat:logo]: http://i.imgur.com/GArPFFB.png
-[scansat:release]: http://forum.kerbalspaceprogram.com/threads/80369
-[scansat:dev]: http://forum.kerbalspaceprogram.com/threads/80661
+[SCANsat:imgur-albums]: https://scansat.imgur.com
+[SCANsat:best-orbits-table]: https://www.example.com
+[SCANsat:email]: mailto:SCANscansat@gmail.com
+
+[SCANsat:dev-readme]: https://github.com/S-C-A-N/SCANsat/tree/dev/#table-of-contents
+[SCANsat:rel-readme]: https://github.com/S-C-A-N/SCANsat/#table-of-contents
+
+[SCANsat:rel-thread]: http://forum.kerbalspaceprogram.com/threads/80369
+[SCANsat:dev-thread]: http://forum.kerbalspaceprogram.com/threads/80661
+
+[SCANsat:dev-source]: https://github.com/S-C-A-N/SCANsat/tree/dev
+[SCANsat:rel-source]: https://github.com/S-C-A-N/SCANsat
+
+[SCANsat:dev-jenkins]: https://ksp.sarbian.com/jenkins/job/SCANsat-dev/
+[SCANsat:rel-jenkins]: https://ksp.sarbian.com/jenkins/job/SCANsat-release/
+
+[SCANsat:dev-jenkins-build-status]: https://ksp.sarbian.com/jenkins/buildStatus/icon?job=SCANsat-dev
+[SCANsat:rel-jenkins-build-status]: https://ksp.sarbian.com/jenkins/buildStatus/icon?job=SCANsat-release
+
+[SCANsat:dev-license]: https://github.com/S-C-A-N/SCANsat/blob/dev/SCANsat/LICENSE.txt
+[SCANsat:rel-license]: https://github.com/S-C-A-N/SCANsat/blob/release/SCANsat/LICENSE.txt
+
+[SCANsat:rel-dist-curseforge]: http://kerbal.curseforge.com/ksp-mods/www.example.com-SCANsat
+[SCANsat:rel-dist-curseforge-zip]: http://kerbal.curseforge.com/ksp-mods/www.example.com-SCANsat/files/latest
+
+[SCANsat:rel-dist-github]: https://github.com/S-C-A-N/SCANsat/releases/tag/www.example.com
+[SCANsat:rel-dist-github-zip]: https://github.com/S-C-A-N/SCANsat/releases/download/www.example.com/SCANsat.zip
+
+[SCANsat:rel-dist-kerbalstuff]: http://beta.kerbalstuff.com/mod/www.example.com/SCANsat
+[SCANsat:rel-dist-kerbalstuff-zip]: http://beta.kerbalstuff.com/mod/www.example.com/SCANsat/download/www.example.com
+
+[SCANsat:dev-dist-curseforge]: https://www.example.com
+[SCANsat:dev-dist-curseforge-zip]: https://www.example.com
+
+[SCANsat:dev-dist-github]: https://github.com/S-C-A-N/SCANsat/releases/tag/www.example.com
+[SCANsat:dev-dist-github-zip]: https://github.com/S-C-A-N/SCANsat/releases/download/www.example.com/SCANsat.zip
+
+[SCANsat:dev-dist-kerbalstuff]: http://beta.kerbalstuff.com/mod/www.example.com/SCANsat
+[SCANsat:dev-dist-kerbalstuff-zip]: http://beta.kerbalstuff.com/mod/www.example.com/SCANsat/download/www.example.com
+
+[IAT]: http://forum.kerbalspaceprogram.com/threads/75854
+[IAT:kerbin-system]: http://forum.kerbalspaceprogram.com/threads/75854?p=#1
+[IAT:inner-systems]: http://forum.kerbalspaceprogram.com/threads/75854?p=#2
+[IAT:duna-dres]: http://forum.kerbalspaceprogram.com/threads/75854?p=#3
+[IAT:jool-system]: http://forum.kerbalspaceprogram.com/threads/75854?p=#4
+[IAT:eeloo]: http://forum.kerbalspaceprogram.com/threads/75854?p=#7
+[IAT:earth-system]: http://forum.kerbalspaceprogram.com/threads/75854?p=#9
 
 [karbonite:release]: http://forum.kerbalspaceprogram.com/threads/89401
 [karbonite:dev]: http://forum.kerbalspaceprogram.com/threads/87335
 [karbonite:logo]: http://i.imgur.com/PkewuRD.png
 
 [kethane:release]: http://forum.kerbalspaceprogram.com/threads/23979
-[kethane:patch01]: http://forum.kerbalspaceprogram.com/threads/23979-Kethane-Pack-0-8-8-Rebalanced-converters-faster-scanning-and-0-24-compatibility?p=1313690&viewfull=1#post1313690
+[kethane:patch01]: http://forum.kerbalspaceprogram.com/threads/23979?p=1313690&viewfull=1#post1313690
 [kethane:logo]: http://i.imgur.com/u952LjP.png?1
 
 [usi:release]: http://forum.kerbalspaceprogram.com/threads/79588
 [usi:dev]: http://forum.kerbalspaceprogram.com/threads/72706
 [usi:logo]: http://i.imgur.com/aimhLzU.png
 
-[mm:release]: http://forum.kerbalspaceprogram.com/threads/55219
 [alcor:release]: http://forum.kerbalspaceprogram.com/threads/54925
 [alcor:logo]: http://i.imgur.com/7eJ3IFC.jpg
+
+[mm:release]: http://forum.kerbalspaceprogram.com/threads/55219
+
 [epl:release]: http://forum.kerbalspaceprogram.com/threads/59545
+
 [kspi:release]: http://forum.kerbalspaceprogram.com/threads/43839
+
 [ors:release]: http://forum.kerbalspaceprogram.com/threads/64595
+
 [toolbar:release]: http://forum.kerbalspaceprogram.com/threads/60863
+
 [rpm:release]: http://forum.kerbalspaceprogram.com/threads/57603
