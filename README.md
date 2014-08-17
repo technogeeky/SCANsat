@@ -1,14 +1,13 @@
 ### [**SCANsat**][top]: Real Scanning, Real Science, Warp Speed!
-[![][shield:license-bsd]][SCANsat:rel-license]&nbsp;
-[![][shield:jenkins-rel]][SCANsat:rel-jenkins]&nbsp;
 [![][shield:support-ksp]][KSP:developers]&nbsp;
-[![][shield:support-rpm]][RPM:release]&nbsp;
-[![][shield:support-ket]][Kethane:release]&nbsp;
-[![][shield:support-ors]][ORS:release]
+[![][shield:jenkins-rel]][SCANsat:rel-jenkins]&nbsp;
+[![][shield:license-bsd]][SCANsat:rel-license]&nbsp;
 
 ![scan your planetoid like the big boys do][bigmap-scan-10000x]
 > ###### **Example SAR scan of Kerbin at 1000x and then 10,000x warp**
-
+[![][shield:support-rpm]][RPM:release]&nbsp;
+[![][shield:support-ket]][Kethane:release]&nbsp;
+[![][shield:support-ors]][ORS:release]
 **Table of Contents**
 ------------------------------------------
 * [0. People, Facts, and FAQs][0]
