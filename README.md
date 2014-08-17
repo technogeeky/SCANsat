@@ -7,7 +7,9 @@
 
 [![][shield:support-rpm]][RPM:release]&nbsp;
 [![][shield:support-ket]][Kethane:release]&nbsp;
-[![][shield:support-ors]][ORS:release]
+[![][shield:support-ors]][ORS:release]&nbsp;
+[![][shield:support-mm]][mm:release]&nbsp;
+[![][shield:support-toolbar]][toolbar:release] 
 **Table of Contents**
 ------------------------------------------
 * [0. People, Facts, and FAQs][0]
