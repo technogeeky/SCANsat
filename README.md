@@ -400,9 +400,9 @@ sneaky then they can of course be sneaky.
 [bigmap-anim]: http://i.imgur.com/kxyl8xR.gif
 
 
-[top]: ./README.md#table-of-contents
-[0]: ./README.md#top-0-people-facts-and-faqs
-[0a]: ./README.md#top-a-facts
+[top]: #table-of-contents
+[0]: #top-0-people-facts-and-faqs
+[0a]: #top-a-facts
 [0b]:./README/md#top-b-faqs
 [1]: ./README.md#top-1-installation-and-interoperability
 [1a]: ./README.md#top-a-installation
