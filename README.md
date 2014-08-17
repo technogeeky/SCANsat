@@ -141,7 +141,7 @@ S.C.A.N. is proud to collaborate with other KSP mods and modding teams. Followin
 [**ModuleManager**][mm:release] | [**Extraplanetary Launchpads**][epl:release]
 
 
-As of the following versions:
+
 * **SCANsat**
   * [x] [**v8.0**][SCANsat:rel-thread] SCANsat Release **version: v8.0**
   * [x] [**v9.0**][SCANsat:dev-thread] SCANsat Dev **version: v9.0**
@@ -149,30 +149,20 @@ As of the following versions:
  **MM**, **RPM**, and **Toolbar** are all **soft** dependencies. This means your experience with SCANsat will be enhanced if you are using these mods, but they are not necessary.
 
 **SCANsat** is built against the following mods:
-  * [x] [**MM**][mm:release]: ModuleManager [![][shield:support-mm]][mm:release]
-  * [x] [**RPM**][rpm:release]: RasterPropMonitor [![][shield:support-rpm]][rpm:release]
-  * [x] via (RPM) <- [**ALCOR**][alcor:release]: ALCOR [![][shield:support-alcor]][alcor:release]
-  * [x] [**Toolbar**][toolbar:release] Blizzy's Toolbar [![][shield:support-toolbar]][toolbar:release] 
+  * [x] [![][shield:support-mm]][mm:release]
+  * [x] [![][shield:support-rpm]][rpm:release]
+  * [x] [![][shield:support-alcor]][alcor:release]
+  * [x] [![][shield:support-toolbar]][toolbar:release] 
 
-**SCANsat** generically supports scanning for resources. These resources are powered by **ORS** (included with ZIP) and/or **Kethane** (available [here][kethane:release], patch [here][kethane:patch01]). By working with these two mods, all other resource mod support follows.
-
-* **Resource** Scanning Support
-  * [x] [**ORS**][ors:release]: OpenResourceSystem [![][shield:support-ors]][ORS:release]
-  * [x] via (ORS) <- [**KSPI**][kspi:release]: Interstellar [![][shield:support-kspi]][kspi:release]
-  * [x] via (ORS) <- [**MKS**][usi:release]: USI (MKS/OKS) [![][shield:support-usi]][usi:release]
-  * [ ] via (ORS) <- [**OKS**][usi:release]: USI (MKS/OKS) [![][shield:support-usi]][usi:release]
-  * [x] via (ORS) <- [**Karbonite**][karbonite:release] (Release) [![][shield:support-karbonite]][karbonite:release]
-  * [x] via (ORS) <- [**Karbonite**][karbonite:dev] (Dev) [![][shield:support-karbonite]][karbonite:release]
-  * [ ] [**Kethane**][kethane:release] Kethane [![][shield:support-ket-no]][kethane:release]
-  * [x] [**Kethane**][kethane:release] Kethane ([**patch**][kethane:patch01] by taniwha) [![][shield:support-ket]][kethane:patch01]
-  * [x] via (Kethane) <- [**EPL**][epl:release]: Extra Planetary Launchpads  [![][shield:support-epl]][epl:release]
-
-> Notes
-> + **BOLD**: is there to identify (b-)acronyms we endure
-> + **bold** versions are those who we directly match
-> + *italics* versions are those which use a mod we support
-> + [x] or (checked) means that we build against, test with, inter-operate with, a particular version of this mod.
-> + [ ] or (unchecked) means that it may work, but we S.C.A.N. didn't verify
+**SCANsat** also supports resource scanning with the following mods:
+  * [x] [![][shield:support-ors]][ORS:release]
+  * [x] via (ORS) <- [![][shield:support-kspi]][kspi:release]
+  * [x] via (ORS) <- [![][shield:support-usi]][usi:release]
+  * [x] via (ORS) (Release) [![][shield:support-karbonite]][karbonite:release]
+  * [x] via (ORS) (Dev) [![][shield:support-karbonite]][karbonite:release]
+  * [ ] [![][shield:support-ket-no]][kethane:release]
+  * [x] ([**Kethane patch**][kethane:patch01] by taniwha) [![][shield:support-ket]][kethane:patch01]
+  * [x] via (Kethane) <- [![][shield:support-epl]][epl:release]
 
 
 ### [:top:][top] 2. Types of Scans 
