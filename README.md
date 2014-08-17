@@ -152,7 +152,7 @@ As of the following versions:
   * [x] [**MM**][mm:release]: ModuleManager [![][shield:support-mm]][mm:release]
   * [x] [**RPM**][rpm:release]: RasterPropMonitor [![][shield:support-rpm]][rpm:release]
   * [x] via (RPM) <- [**ALCOR**][alcor:release]: ALCOR [![][shield:support-alcor]][alcor:release]
-  * [x] [**Toolbar**][toolbar:release] Blizzy's Toolbar [![][shield:support-toolbar]][toolbar:release] http://img.shields.io/badge/for%20Blizzy's%20Toolbar-1.7.6-7c69c0.svg
+  * [x] [**Toolbar**][toolbar:release] Blizzy's Toolbar [![][shield:support-toolbar]][toolbar:release] 
 
 **SCANsat** generically supports scanning for resources. These resources are powered by **ORS** (included with ZIP) and/or **Kethane** (available [here][kethane:release], patch [here][kethane:patch01]). By working with these two mods, all other resource mod support follows.
 
@@ -165,7 +165,7 @@ As of the following versions:
   * [x] via (ORS) <- [**Karbonite**][karbonite:dev] (Dev) [![][shield:support-karbonite]][karbonite:release]
   * [ ] [**Kethane**][kethane:release] Kethane [![][shield:support-ket-no]][kethane:release]
   * [x] [**Kethane**][kethane:release] Kethane ([**patch**][kethane:patch01] by taniwha) [![][shield:support-ket]][kethane:patch01]
-  * [x] via (Kethane) <- [**EPL**][epl:release]: Extra Planetary Launchpads [shield:support-epl]: http://img.shields.io/badge/for%EPL-4.2.3-ff8c00.svg9b9015
+  * [x] via (Kethane) <- [**EPL**][epl:release]: Extra Planetary Launchpads  [![][shield:support-epl]][epl:release]
 
 > Notes
 > + **BOLD**: is there to identify (b-)acronyms we endure
