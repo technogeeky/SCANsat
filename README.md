@@ -24,8 +24,8 @@
   * [b. Biome][2b]
   * [c. Anomaly][2c]
   * [d. Resources][2d]
-    * [1. Kethane][2d1]
-    * [2. ORS][2d2]
+    * [1. Kethane][2d1] [![][shield:support-ket]][kethane:patch01]
+    * [2. ORS][2d2] [![][shield:support-ors]][ORS:release]
 * [3. Basic Usage][3]
   * [a. FAQ: Finding a Good Altitude][3a]
   * [b. Mismatched Scanners][3b]
@@ -158,10 +158,10 @@ S.C.A.N. is proud to collaborate with other KSP mods and modding teams. Followin
   * [x] [![][shield:support-ors]][ORS:release]
   * [x] via (ORS) <- [![][shield:support-kspi]][kspi:release]
   * [x] via (ORS) <- [![][shield:support-usi]][usi:release]
-  * [x] via (ORS) (Release) [![][shield:support-karbonite]][karbonite:release]
-  * [x] via (ORS) (Dev) [![][shield:support-karbonite]][karbonite:release]
+  * [x] via (ORS) <- (Release) [![][shield:support-karbonite]][karbonite:release]
+  * [x] via (ORS) <- (Dev) [![][shield:support-karbonite]][karbonite:release]
   * [ ] [![][shield:support-ket-no]][kethane:release]
-  * [x] ([**Kethane patch**][kethane:patch01] by taniwha) [![][shield:support-ket]][kethane:patch01]
+  * [x] [**Kethane patch**][kethane:patch01] by taniwha [![][shield:support-ket]][kethane:patch01]
   * [x] via (Kethane) <- [![][shield:support-epl]][epl:release]
 
 
@@ -170,7 +170,6 @@ S.C.A.N. is proud to collaborate with other KSP mods and modding teams. Followin
 SCANsat supports several different kinds of scans (as opposed to
 scanning modules or parts).
 
-As of **v8.0** these include:
   * **RadarLo**: Basic, Low-Resolution RADAR Altimetry (b&w, limited zoom)
   * **RadarHi**: Advanced, High-Resolution RADAR Altimetry (in color, unlimited zoom)
   * **Slope**: Slope Data converted from RADAR data
