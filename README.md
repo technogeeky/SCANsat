@@ -11,7 +11,6 @@
 
 **Table of Contents**
 ------------------------------------------
-
 * [0. People, Facts, and FAQs][0]
   * [a. Facts][0a]
   * [b. FAQs][0b]
@@ -20,12 +19,10 @@
   * [b. GameData Layout][1b]
   * [c. Other Add-Ons][1c]
 * [2. Types of Scans][2]
-  * [a. Altimetry][2a]
-  * [b. Biome][2b]
-  * [c. Anomaly][2c]
-  * [d. Resources][2d]
-    * [1. Kethane][2d1] [![][shield:support-ket]][kethane:patch01]
-    * [2. ORS][2d2] [![][shield:support-ors]][ORS:release]
+  * [a. Natvive SCANsat][2a]
+  * [b. Resource Scans][2b]
+  * [1. Kethane][2b1] [![][shield:support-ket]][kethane:patch01][![][shield:jenkins-ket]][SCANsat:ket-jenkins]
+  * [2. ORS][2b2] [![][shield:support-ors]][ORS:release][![][shield:jenkins-ors]][SCANsat:ors-jenkins]
 * [3. Basic Usage][3]
   * [a. FAQ: Finding a Good Altitude][3a]
   * [b. Mismatched Scanners][3b]
@@ -181,24 +178,42 @@ Other parts and add-ons are free to include one or more of these kinds of scans.
 we would request that similar (same order of magitude) scanning paramters and limitations are used
 on custom parts, but this is not a requirement.
 
-#### [:top:][top] a. Altimetry 
-:heavy_exclamation_mark:
+#### [:top:][top] a. SCANsat Scans
 
-#### [:top:][top] b. Biome 
-:heavy_exclamation_mark:
+Without any resource scanning mods installed, **SCANsat** can scan for a few basic types of data. All of these (non-resource) scans are shown as indicators on the Small Map.
 
-#### [:top:][top] c. Anomaly 
-:heavy_exclamation_mark:
 
-#### [:top:][top] d. Resources 
-:heavy_exclamation_mark:
+Data Type | Scan Type | Scan Indicator
+:--- | :--- | :---:
+Altimetry | **RADAR** | **LO**
+Altimetry | **SAR** | **HI**
+Biome | **Biome** | **BIO**
+Anomaly | **Anomaly** | **ANOM**
+Anomaly | **Been There, Done That(tm)** | **BTDT**
 
-##### [:top:][top] 1. Kethane 
-:heavy_exclamation_mark:
+* The **Slope** map is generated from either **HI** or **LO** data.
+* The **Biome** scan only works for bodies that have biomes. For vanilla KSP, this means Kerbin, Mun, and Minmus.
+* **Anomalies** are things the builds of KSC, hidden easter eggs, lowest or highest altitudes, etc...
+* The *ANOM** data scans for anomalies from orbit, while
+* **BTDT** shows a camera view of an anomaly once you are near it
 
-##### [:top:][top] 2. ORS 
-:heavy_exclamation_mark:
+#### [:top:][top] b. Resource Scans
 
+**SCANsat** will scan planetoids for resources, assuming you have the relevant mods installed. All support for resource scanning is handled through one of two plugins. **ORS** supports many resources, and **Kethane** supports a few. 
+
+##### [:top:][top] 1. Kethane
+[![][shield:jenkins-ket]][SCANsat:ket-jenkins]
+
+**Kethane** support is built using an included extra DLL file. 
+
+This file will only be loaded if you have a Kethane installed in its usual location. If Kethane is not installed, this DLL will simply unloaded from memory. **Kethane** also checks to see if you have multiple versions of it installed, an warns you.
+
+
+##### [:top:][top] 2. ORS
+[![][shield:jenkins-ors]][SCANsat:ors-jenkins]
+
+**ORS** support is built internal to SCANsat. If you have an **ORS** DLL loaded anywhere (or if you use the one
+included with SCANsat), **ORS** will only load and target the newest version. As such, it may not warn you if you have multiple version installed (because it will ignore all but the latest).
 
 
 ### [:top:][top] 3. Basic Usage
@@ -404,12 +419,10 @@ sneaky then they can of course be sneaky.
 [1b]: #top-b-gamedata-layout
 [1c]: #top-c-other-add-ons
 [2]: #top-2-types-of-scans
-[2a]: #top-a-altimetry
-[2b]: #top-b-biome
-[2c]: #top-c-anomaly
-[2d]: #top-d-resources
-[2d1]: #top-1-kethane
-[2d2]: #top-2-ors
+[2a]: #top-a-scansat-scans
+[2b]: #top-d-resource-scans
+[2b1]: #top-1-kethane
+[2b2]: #top-2-ors
 [3]: #top-3-basic-usage
 [3a]: #top-3a-faq-finding-a-good-altitude
 [3b]: #top-3b-mismatched-scanners
@@ -472,9 +485,8 @@ sneaky then they can of course be sneaky.
 
 [SCANsat:dev-jenkins]: https://ksp.sarbian.com/jenkins/job/SCANsat-dev/
 [SCANsat:rel-jenkins]: https://ksp.sarbian.com/jenkins/job/SCANsat-release/
-
-[SCANsat:dev-jenkins-build-status]: https://ksp.sarbian.com/jenkins/buildStatus/icon?job=SCANsat-dev
-[SCANsat:rel-jenkins-build-status]: https://ksp.sarbian.com/jenkins/buildStatus/icon?job=SCANsat-release
+[SCANsat:ket-jenkins]: https://ksp.sarbian.com/jenkins/job/SCANsat-Kethane/
+[SCANsat:ors-jenkins]: https://ksp.sarbian.com/jenkins/job/SCANsat-OpenResourceSystem/
 
 [SCANsat:dev-license]: https://github.com/S-C-A-N/SCANsat/blob/dev/SCANsat/LICENSE.txt
 [SCANsat:rel-license]: https://github.com/S-C-A-N/SCANsat/blob/release/SCANsat/LICENSE.txt
