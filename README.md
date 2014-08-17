@@ -456,7 +456,7 @@ sneaky then they can of course be sneaky.
 [shield:support-usi]:http://img.shields.io/badge/works%20with%20USI-0.19.3-34c566.svg
 [shield:support-karbonite]: http://img.shields.io/badge/works%20with%20Karbonite-0.1.1-ff8c00.svg
 [shield:support-epl]: http://img.shields.io/badge/works%20with%20EPL-4.2.3-ff8c00.svg
-[shield:support-ket-no]: http://img.shields.io/badge/INCOMPATIBLE%20with%20Kethane-v0.8.8-brightred.svg
+[shield:support-ket-no]: http://img.shields.io/badge/INCOMPATIBLE%20with%20Kethane-v0.8.8-ff0000.svg
 
 
 [shield:gittip-tg-img]: http://img.shields.io/gittip/technogeeky.png
