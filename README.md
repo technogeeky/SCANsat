@@ -182,6 +182,7 @@ on custom parts, but this is not a requirement.
 
 Without any resource scanning mods installed, **SCANsat** can scan for a few basic types of data. All of these (non-resource) scans are shown as indicators on the Small Map.
 
+![][small-mismatch2]
 
 Data Type | Scan Type | Scan Indicator
 :--- | :--- | :---:
@@ -201,6 +202,12 @@ Anomaly | **Been There, Done That(tm)** | **BTDT**
 
 **SCANsat** will scan planetoids for resources, assuming you have the relevant mods installed. All support for resource scanning is handled through one of two plugins. **ORS** supports many resources, and **Kethane** supports a few. 
 
+Each of the two resource systems can be enabled through the **SCANsat** Settings menu:
+> ![][resource-walkthrough]
+
+Both of the two resource systems will work in IVA, too:
+> ![][resource-iva]
+
 ##### [:top:][top] 1. Kethane
 [![][shield:jenkins-ket]][SCANsat:ket-jenkins]
 
@@ -208,12 +215,21 @@ Anomaly | **Been There, Done That(tm)** | **BTDT**
 
 This file will only be loaded if you have a Kethane installed in its usual location. If Kethane is not installed, this DLL will simply unloaded from memory. **Kethane** also checks to see if you have multiple versions of it installed, an warns you.
 
+Once it is installed correctly, you will be able to enable Kethane resources in the settings menu:
+> ![][resource-kethane]
+
 
 ##### [:top:][top] 2. ORS
 [![][shield:jenkins-ors]][SCANsat:ors-jenkins]
 
 **ORS** support is built internal to SCANsat. If you have an **ORS** DLL loaded anywhere (or if you use the one
 included with SCANsat), **ORS** will only load and target the newest version. As such, it may not warn you if you have multiple version installed (because it will ignore all but the latest).
+
+With any **ORS**-using mod installed, you can enable their resources in the Settings menu, and enable their overlay on the Big Map:
+> ![][resource-ors]
+
+For instance the **Karbonite** mod's resources can be viewed:
+> ![][resource-ors-karbonite]
 
 
 ### [:top:][top] 3. Basic Usage
