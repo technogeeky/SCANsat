@@ -152,7 +152,7 @@ As of the following versions:
   * [x] [**MM**][mm:release]: ModuleManager [![][shield:support-mm]][mm:release]
   * [x] [**RPM**][rpm:release]: RasterPropMonitor [![][shield:support-rpm]][rpm:release]
   * [x] via (RPM) <- [**ALCOR**][alcor:release]: ALCOR [![][shield:support-alcor]][alcor:release]
-  * [x] [**Toolbar**][toolbar:release] Blizzy's Toolbar [shield:support-toolbar]: http://img.shields.io/badge/for%20Blizzy's%20Toolbar-1.7.6-7c69c0.svg
+  * [x] [**Toolbar**][toolbar:release] Blizzy's Toolbar [![][shield:support-toolbar]][toolbar:release] http://img.shields.io/badge/for%20Blizzy's%20Toolbar-1.7.6-7c69c0.svg
 
 **SCANsat** generically supports scanning for resources. These resources are powered by **ORS** (included with ZIP) and/or **Kethane** (available [here][kethane:release], patch [here][kethane:patch01]). By working with these two mods, all other resource mod support follows.
 
