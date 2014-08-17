@@ -9,7 +9,12 @@
 [![][shield:support-ket]][Kethane:release]&nbsp;
 [![][shield:support-ors]][ORS:release]&nbsp;
 [![][shield:support-mm]][mm:release]&nbsp;
-[![][shield:support-toolbar]][toolbar:release] 
+[![][shield:support-toolbar]][toolbar:release]&nbsp;
+[![][shield:support-kspi]][kspi:release]&nbsp;
+[![][shield:support-karbonite]][karbonite:release]&nbsp;
+[![][shield:support-usi]][usi:release]&nbsp;
+[![][shield:support-epl]][epl:release]&nbsp;
+
 **Table of Contents**
 ------------------------------------------
 * [0. People, Facts, and FAQs][0]
