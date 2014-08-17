@@ -17,9 +17,8 @@
 
 **Table of Contents**
 ------------------------------------------
-* [0. People, Facts, and FAQs][0]
-  * [a. Facts][0a]
-  * [b. FAQs][0b]
+* [0. People and FAQs][0]
+  * [a. FAQs][0a]
 * [1. Installation and Interoperability][1]
   * [a. Installation][1a]
   * [b. GameData Layout][1b]
@@ -92,12 +91,9 @@ In addition to the authors, the following people have contributed:
 
 For licensing information, please see the [included LICENSE.txt][SCANsat:rel-license] file.
 
-[Source Code][SCANsat:source] is available, as some licenses may require.
+[Source Code][SCANsat:rel-source] is available, as some licenses may require.
 
-### [:top:][top] a. Facts
-
-
-### [:top:][top] b. FAQs
+### [:top:][top] a. FAQs
 
   * What does SCANsat do?
     * It allows you to scan planetary bodies for terrain, biome, and resource information and generate various kinds of maps.
@@ -433,9 +429,8 @@ sneaky then they can of course be sneaky.
 
 
 [top]: #table-of-contents
-[0]: #top-0-people-facts-and-faqs
-[0a]: #top-a-facts
-[0b]: #top-b-faqs
+[0]: #top-0-people-and-faqs
+[0a]: #top-b-faqs
 [1]: #top-1-installation-and-interoperability
 [1a]: #top-a-installation
 [1b]: #top-b-gamedata-layout
