@@ -92,11 +92,10 @@ For licensing information, please see the [included LICENSE.txt][SCANsat:rel-lic
 [Source Code][SCANsat:source] is available, as some licenses may require.
 
 ### [:top:][top] a. Facts
-------------------------------------------
-:heavy_exclamation_mark:
+
 
 ### [:top:][top] b. FAQs
-------------------------------------------
+
   * What does SCANsat do?
     * It allows you to scan planetary bodies for terrain, biome, and resource information and generate various kinds of maps.
   * How does SCANsat affect gameplay?
@@ -131,7 +130,7 @@ For licensing information, please see the [included LICENSE.txt][SCANsat:rel-lic
 
 #### [:top:][top] c. Other Add-Ons 
 
-S.C.A.N. is proud to collaborate with other KSP modding teams. Following is a table of all of the mods, add-ons, or software that we interoperate with. **Do not fear** though, this does not mean installation and usage of SCANsat is difficult!
+S.C.A.N. is proud to collaborate with other KSP mods and modding teams. Following is a table of all of the mods, add-ons, or software that we interoperate with.
 
 **Built Using** | **Supported By**
 :---: | :---:
@@ -147,26 +146,26 @@ As of the following versions:
   * [x] [**v8.0**][SCANsat:rel-thread] SCANsat Release **version: v8.0**
   * [x] [**v9.0**][SCANsat:dev-thread] SCANsat Dev **version: v9.0**
 
-**SCANsat** is built against the following mods. **MM**, **RPM**, and **Toolbar** are all **soft** dependencies. This means your experience with SCANsat will be enhanced if you are using these mods, but they are not necessary.
+ **MM**, **RPM**, and **Toolbar** are all **soft** dependencies. This means your experience with SCANsat will be enhanced if you are using these mods, but they are not necessary.
 
-* **Library** Support
-  * [x] [**MM**][mm:release]: ModuleManager **version: 2.2.1**
-  * [x] [**RPM**][rpm:release]: RasterPropMonitor **version: v0.18.2**
-  * [x] via (RPM) <- [**ALCOR**][alcor:release]: Blah Blah Capsule Blah Blah *version: 0.9*
-  * [x] [**Toolbar**][toolbar:release] Blizzy's Toolbar **version: 1.7.6**
+**SCANsat** is built against the following mods:
+  * [x] [**MM**][mm:release]: ModuleManager [![][shield:support-mm]][mm:release]
+  * [x] [**RPM**][rpm:release]: RasterPropMonitor [![][shield:support-rpm]][rpm:release]
+  * [x] via (RPM) <- [**ALCOR**][alcor:release]: ALCOR [![][shield:support-alcor]][alcor:release]
+  * [x] [**Toolbar**][toolbar:release] Blizzy's Toolbar [shield:support-toolbar]: http://img.shields.io/badge/for%20Blizzy's%20Toolbar-1.7.6-7c69c0.svg
 
-As of **v8.0**, **SCANsat** generically supports scanning for resources. These resources are powered by **ORS** (included with ZIP) and/or **Kethane** (available [here][kethane:release], patch [here][kethane:patch01]). By working with these two mods, all other resource mod support follows.
+**SCANsat** generically supports scanning for resources. These resources are powered by **ORS** (included with ZIP) and/or **Kethane** (available [here][kethane:release], patch [here][kethane:patch01]). By working with these two mods, all other resource mod support follows.
 
 * **Resource** Scanning Support
-  * [x] [**ORS**][ors:release]: OpenResourceSystem **version: 1.1.0**
-  * [x] via (ORS) <- [**KSPI**][kspi:release]: Interstellar *version: 0.11*
-  * [x] via (ORS) <- [**MKS**][usi:release]: USI Kolonization Systems (MKS/OKS) *version: 0.19.3*
-  * [ ] via (ORS) <- [**OKS**][usi:release]: USI Kolonization Systems (MKS/OKS) *version: 0.19.3*
-  * [x] via (ORS) <- [**Karbonite**][karbonite:release] (Release) *version: 0.1.1*
-  * [x] via (ORS) <- [**Karbonite**][karbonite:dev] (Dev) *version: 0.1.1*
-  * [ ] [**Kethane**][kethane:release] Kethane **version: 0.8.8**
-  * [x] [**Kethane**][kethane:release] Kethane ([**patch**][kethane:patch01] by taniwha) **version: 0.8.8.1**
-  * [x] via (Kethane) <- [**EPL**][epl:release]: Extra Planetary Launchpads *version: v4.2.3*
+  * [x] [**ORS**][ors:release]: OpenResourceSystem [![][shield:support-ors]][ORS:release]
+  * [x] via (ORS) <- [**KSPI**][kspi:release]: Interstellar [![][shield:support-kspi]][kspi:release]
+  * [x] via (ORS) <- [**MKS**][usi:release]: USI (MKS/OKS) [![][shield:support-usi]][usi:release]
+  * [ ] via (ORS) <- [**OKS**][usi:release]: USI (MKS/OKS) [![][shield:support-usi]][usi:release]
+  * [x] via (ORS) <- [**Karbonite**][karbonite:release] (Release) [![][shield:support-karbonite]][karbonite:release]
+  * [x] via (ORS) <- [**Karbonite**][karbonite:dev] (Dev) [![][shield:support-karbonite]][karbonite:release]
+  * [ ] [**Kethane**][kethane:release] Kethane [![][shield:support-ket-no]][kethane:release]
+  * [x] [**Kethane**][kethane:release] Kethane ([**patch**][kethane:patch01] by taniwha) [![][shield:support-ket]][kethane:patch01]
+  * [x] via (Kethane) <- [**EPL**][epl:release]: Extra Planetary Launchpads [shield:support-epl]: http://img.shields.io/badge/for%EPL-4.2.3-ff8c00.svg9b9015
 
 > Notes
 > + **BOLD**: is there to identify (b-)acronyms we endure
@@ -399,6 +398,13 @@ sneaky then they can of course be sneaky.
 [bigmap-scan-100x]: http://i.imgur.com/bcht47p.gif
 [bigmap-anim]: http://i.imgur.com/kxyl8xR.gif
 
+[resource-kethane]: http://i.imgur.com/naJIsvB.gif
+[resource-kethane2]: http://i.imgur.com/AT2b4G7.jpg?1
+[resource-ors]: http://i.imgur.com/wzhhPRS.png?2
+[resource-ors-karbonite]: http://i.imgur.com/Sge2OGH.png?1
+[resource-iva]: http://i.imgur.com/iRo4kSA.png
+[resource-walkthrough]: http://i.imgur.com/HJLK1yi.gif
+
 
 [top]: #table-of-contents
 [0]: #top-0-people-facts-and-faqs
@@ -441,8 +447,17 @@ sneaky then they can of course be sneaky.
 [shield:jenkins-ors]: http://img.shields.io/jenkins/s/https/ksp.sarbian.com/jenkins/SCANsat-openresourcesystem.svg
 [shield:support-ksp]: http://img.shields.io/badge/for%20KSP-v0.23.5%20--%20v0.24.2-bad455.svg
 [shield:support-rpm]: http://img.shields.io/badge/for%20RPM-v0.18.2-a31f34.svg
-[shield:support-ket]: http://img.shields.io/badge/for%20Kethane-v8.8.8.8-brightgreen.svg
+[shield:support-ket]: http://img.shields.io/badge/for%20Kethane-v0.8.8.1-brightgreen.svg
 [shield:support-ors]: http://img.shields.io/badge/for%20ORS-v1.1.0-000000.svg
+[shield:support-mm]: http://img.shields.io/badge/for%20MM-v2.2.1-40b7c0.svg
+[shield:support-toolbar]: http://img.shields.io/badge/for%20Blizzy's%20Toolbar-1.7.6-7c69c0.svg
+[shield:support-alcor]: http://img.shields.io/badge/for%20ALCOR-0.9-299bc7.svg
+[shield:support-kspi]: http://img.shields.io/badge/for%20Interstellar-0.11-a62374.svg
+[shield:support-usi]:http://img.shields.io/badge/for%20USI-0.19.3-34c566.svg
+[shield:support-karbonite]: http://img.shields.io/badge/for%20Karbonite-0.1.1-ff8c00.svg
+[shield:support-epl]: http://img.shields.io/badge/for%EPL-4.2.3-ff8c00.svg9b9015
+[shield:support-ket-no]: http://img.shields.io/badge/for%20Kethane-v0.8.8-red.svg
+
 
 [shield:gittip-tg-img]: http://img.shields.io/gittip/technogeeky.png
 [shield:gittip-tg]: https://www.gittip.com/technogeeky/
