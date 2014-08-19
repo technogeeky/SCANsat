@@ -1,17 +1,3 @@
-Build 			| Shield
-:---------------------- | -----------------------
-SCANsat DEV		| ![][shield:jenkins-dev]
-SCANsat Release		| ![][shield:jenkins-rel]
-SCANsat Kethane		| ![][shield:jenkins-ket]
-SCANsat ORS(dummy)	| ![][shield:jenkins-ors]
-
-![][shield:gittip-tg-img]<br/>
-![][shield:github-issues]<br/>
-
-![][shield:license-bsd]<br/>
-![][shield:license-mit]<br/>
-
-
 |    Name   | Relationship | Min Version | Max Version |  Color  |             Shield            |
 |:---------:|:------------:|:-----------:|:-----------:|:-------:|:----------------------------- |
 |    KSP    |      for     |    0.23.5   |    0.24.x   | #bad455 |    ![][shield:support-ksp]    |
@@ -27,9 +13,28 @@ SCANsat ORS(dummy)	| ![][shield:jenkins-ors]
 |    USI    |  works with  |    0.19.3   |             | #34c566 |    ![][shield:support-usi]    |
 |    EPL    |  works with  |    4.2.3    |             | #0a214c |    ![][shield:support-epl]    |
 
+Build 			| Shield
+:---------------------- | -----------------------
+SCANsat DEV		| ![][shield:jenkins-dev]
+SCANsat Release		| ![][shield:jenkins-rel]
+SCANsat Kethane		| ![][shield:jenkins-ket]
+SCANsat ORS(dummy)	| ![][shield:jenkins-ors]
 
-[shield:license-bsd]: http://img.shields.io/:license-bsd-blue.svg
-[shield:license-mit]: http://img.shields.io/:license-mit-a31f34.svg
+
+![][shield:gittip-tg-img]<br/>
+![][shield:github-issues]<br/>
+
+![][shield:license-bsd]<br/>
+![][shield:license-mit]<br/>
+![][shield:license-apache]<br/>
+![][shield:license-gplv2]<br/>
+![][shield:license-gplv3]<br/>
+
+[shield:license-bsd]:    http://img.shields.io/:license-BSD-blue.svg
+[shield:license-apache]: http://img.shields.io/:license-Apache-ff8c00.svg
+[shield:license-gplv2]:  http://img.shields.io/:license-GPLv2-66ff00.svg
+[shield:license-gplv3]:  http://img.shields.io/:license-GPLv3-99ff00.svg
+[shield:license-mit]:    http://img.shields.io/:license-MIT-a31f34.svg
 
 [shield:jenkins-dev]: http://img.shields.io/jenkins/s/https/ksp.sarbian.com/jenkins/SCANsat-dev.svg
 [shield:jenkins-rel]: http://img.shields.io/jenkins/s/https/ksp.sarbian.com/jenkins/SCANsat-release.svg
