@@ -1,0 +1,74 @@
+
+[B][SIZE=5]ModuleManager Recipies[/SIZE][/B]
+[spoiler=Show MM Recipes]
+
+[LIST]
+[*]Add MapTraq to all pods/probes
+[LIST]
+[*][spoiler=Show][code]
+@PART:HAS[@MODULE[ModuleCommand]]
+{
+MODULE
+{
+    name = SCANsat
+    sensorType = 0
+    fov = 0
+    min_alt = 0
+    max_alt = 0
+    best_alt = 0
+    power = 0.05
+}
+}
+[/code][/spoiler] 
+[/LIST]
+  
+[*]ORS Uranium/Thorium/Alumina Scanner
+[LIST]
+[*][spoiler=Show][code]@PART[sensorGammaRaySpectrometer]
+{
+
+    MODULE
+    {
+        name = SCANsat
+        sensorType = 64
+        resourceType = 21
+        fov = 10
+        min_alt = 5000
+        max_alt = 500000
+        best_alt = 100000
+        scanName = Uranium Scan
+        power = 0.4
+    }
+
+    MODULE
+    {
+        name = SCANsat
+        sensorType = 64
+        resourceType = 22
+        fov = 10
+        min_alt = 5000
+        max_alt = 500000
+        best_alt = 100000
+        scanName = Thorium Scan
+        power = 0.4
+    }
+
+    MODULE
+    {
+        name = SCANsat
+        sensorType = 64
+        resourceType = 23
+        fov = 10
+        min_alt = 5000
+        max_alt = 500000
+        best_alt = 100000
+        scanName = Alumina Scan
+        power = 0.4
+    }
+
+}
+[/code][/spoiler] 
+[/LIST]
+                                     
+[/LIST]
+[/spoiler] 
