@@ -2,8 +2,8 @@
 |:---------:|:------------:|:-----------:|:-----------:|:-------:|:----------------------------- |
 |    KSP    |      for     |    0.23.5   |    0.24.x   | #bad455 |    ![][shield:support-ksp]    |
 |    RPM    |  works with  |    0.18.2   |             | #a31f34 |    ![][shield:support-rpm]    |
-|  Kethane  |  FAILS with  |             |    0.8.8    | #66ff00 |    ![][shield:support-ket]    |
-|  Kethane  |  works with  |   0.8.8.1   |             | #ff0000 |   ![][shield:support-ket-no]  |
+|  Kethane  |  works with  |   0.8.8.1   |             | #66ff00 |    ![][shield:support-ket]    |
+|  Kethane  |  FAILS with  |   0.8.8     |             | #ff0000 |   ![][shield:support-ket-no]  |
 |    ORS    |  works with  |    1.1.0    |             | #000000 |    ![][shield:support-ors]    |
 |     MM    |   requires   |    2.2.1    |             | #40b7c0 |     ![][shield:support-mm]    |
 |  Toolbar  |  works with  |    1.7.6    |             | #7c69c0 |  ![][shield:support-toolbar]  |
