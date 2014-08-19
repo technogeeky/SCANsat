@@ -1,7 +1,7 @@
-[![][shield:support-ksp]][KSP:developers]
-[![][shield:jenkins-rel]][SCANsat:rel-jenkins]
-[![][shield:license-bsd]][SCANsat:rel-license]
-[![][shield:support-rpm]][RPM:release]
+[![][shield:support-ksp]][KSP:developers]<br/>
+[![][shield:jenkins-rel]][SCANsat:rel-jenkins]<br/>
+[![][shield:license-bsd]][SCANsat:rel-license]<br/>
+[![][shield:support-rpm]][RPM:release]<br/>
 [![][shield:support-ket]][Kethane:release]
 [![][shield:support-ors]][ORS:release]
 [![][shield:support-mm]][mm:release]
