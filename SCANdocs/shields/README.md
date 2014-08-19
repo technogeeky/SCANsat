@@ -13,7 +13,7 @@ SCANsat ORS(dummy)	| ![][shield:jenkins-ors]
 
 
 |    Name   | Relationship | Min Version | Max Version |  Color  |             Shield            |
-|:---------:|:------------:|:-----------:|:-----------:|:-------:|:-----------------------------:|
+|:---------:|:------------:|:-----------:|:-----------:|:-------:|:----------------------------- |
 |    KSP    |      for     |    0.23.5   |    0.24.x   | #bad455 |    ![][shield:support-ksp]    |
 |    RPM    |  works with  |    0.18.2   |             | #a31f34 |    ![][shield:support-rpm]    |
 |  Kethane  |  FAILS with  |             |    0.8.8    | #66ff00 |    ![][shield:support-ket]    |
@@ -40,7 +40,7 @@ SCANsat ORS(dummy)	| ![][shield:jenkins-ors]
 [shield:support-rpm]:       http://img.shields.io/badge/works%20with%20RPM-v0.18.2-a31f34.svg
 [shield:support-ket]:       http://img.shields.io/badge/works%20with%20Kethane-v0.8.8.1-66ff00.svg
 [shield:support-ors]:       http://img.shields.io/badge/works%20with%20ORS-v1.1.0-000000.svg
-[shield:support-mm]:        http://img.shields.io/badge/requires MM-v2.2.1-40b7c0.svg
+[shield:support-mm]:        http://img.shields.io/badge/requires%20MM-v2.2.1-40b7c0.svg
 [shield:support-toolbar]:   http://img.shields.io/badge/works%20with%20Blizzy's%20Toolbar-1.7.6-7c69c0.svg
 [shield:support-alcor]:     http://img.shields.io/badge/works%20with%20ALCOR-0.9-299bc7.svg
 [shield:support-kspi]:      http://img.shields.io/badge/works%20with%20Interstellar-0.11-a62374.svg
