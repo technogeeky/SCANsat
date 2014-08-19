@@ -2,17 +2,25 @@
 [![][shield:jenkins-rel]][SCANsat:rel-jenkins]<br/>
 [![][shield:license-bsd]][SCANsat:rel-license]<br/>
 [![][shield:support-rpm]][RPM:release]<br/>
-[![][shield:support-ket]][Kethane:release]
-[![][shield:support-ors]][ORS:release]
-[![][shield:support-mm]][mm:release]
-[![][shield:support-toolbar]][toolbar:release]
-[![][shield:support-kspi]][kspi:release]
-[![][shield:support-karbonite]][karbonite:release]
-[![][shield:support-usi]][usi:release]
-[![][shield:support-epl]][epl:release]
+[![][shield:support-ket]][Kethane:release]<br/>
+[![][shield:support-ors]][ORS:release]<br/>
+[![][shield:support-mm]][mm:release]<br/>
+[![][shield:support-toolbar]][toolbar:release]<br/>
+[![][shield:support-kspi]][kspi:release]<br/>
+[![][shield:support-karbonite]][karbonite:release]<br/>
+[![][shield:support-usi]][usi:release]<br/>
+[![][shield:support-epl]][epl:release]<br/>
 
-[![][shield:support-ket]][kethane:patch01][![][shield:jenkins-ket]][SCANsat:ket-jenkins]
-[![][shield:support-ors]][ORS:release][![][shield:jenkins-ors]][SCANsat:ors-jenkins]
+[![][shield:support-ket]][kethane:patch01]<br/>
+[![][shield:jenkins-ket]][SCANsat:ket-jenkins]<br/>
+[![][shield:support-ors]][ORS:release]<br/>
+[![][shield:jenkins-ors]][SCANsat:ors-jenkins]<br/>
+
+[![][shield:gittip-tg-img]][shield_gittip-tg]<br/>
+[][shield:github-issues]<br/>
+
+[![][shield:jenkins-ket]][SCANsat:ket-jenkins]<br/>
+[![][shield:jenkins-ors]][SCANsat:ors-jenkins]<br/>
 
 **SCANsat** is built against the following mods:
   * [x] [![][shield:support-mm]][mm:release]
@@ -29,14 +37,6 @@
   * [ ] [![][shield:support-ket-no]][kethane:release]
   * [x] [**Kethane patch**][kethane:patch01] by taniwha [![][shield:support-ket]][kethane:patch01]
   * [x] via (Kethane) <- [![][shield:support-epl]][epl:release]
-
-[![][shield:jenkins-ket]][SCANsat:ket-jenkins]
-[![][shield:jenkins-ors]][SCANsat:ors-jenkins]
-
-
-[![][shield:gittip-tg-img]][shield_gittip-tg]
-[][shield:github-issues]
-
 
 [shield:license-bsd]: http://img.shields.io/:license-bsd-blue.svg
 [shield:license-mit]: http://img.shields.io/:license-mit-a31f34.svg
