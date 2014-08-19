@@ -33,7 +33,7 @@ SCANsat ORS(dummy)	| ![][shield:jenkins-ors]
 [shield:license-bsd]:    http://img.shields.io/:license-BSD-blue.svg
 [shield:license-apache]: http://img.shields.io/:license-Apache-ff8c00.svg
 [shield:license-gplv2]:  http://img.shields.io/:license-GPLv2-66ff00.svg
-[shield:license-gplv3]:  http://img.shields.io/:license-GPLv3-99ff00.svg
+[shield:license-gplv3]:  http://img.shields.io/:license-GPLv3-22ff00.svg
 [shield:license-mit]:    http://img.shields.io/:license-MIT-a31f34.svg
 
 [shield:jenkins-dev]: http://img.shields.io/jenkins/s/https/ksp.sarbian.com/jenkins/SCANsat-dev.svg
