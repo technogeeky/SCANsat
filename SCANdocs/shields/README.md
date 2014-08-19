@@ -5,22 +5,20 @@ SCANsat Release		| ![][shield:jenkins-rel]
 SCANsat Kethane		| ![][shield:jenkins-ket]
 SCANsat ORS(dummy)	| ![][shield:jenkins-ors]
 
-
-| Supported | Short Name | Relationship | Min Version | Max Version | Color | shield |
-|---------------------------|:----------:|:------------:|:-----------:|:-----------:|:-------:|:-----------------------------:|
-| Kerbal Space Program | KSP | for | 0.23.5 | 0.24.x | #bad455 | ![][shield:support-ksp] |
-| RasterPropMonitor | RPM | works with | 0.18.2 |  | #a31f34 | ![][shield:support-rpm] |
-| Kethane |  | FAILS with |  | 0.8.8 | #66ff00 | ![][shield:support-ket] |
-| Kethane |  | works with | 0.8.8.1 |  | #ff0000 | ![][shield:support-ket-no] |
-| OpenResourceSystem | ORS | works with | 1.1.0 |  | #000000 | ![][shield:support-ors] |
-| ModuleManager | MM | requires | 2.2.1 |  | #40b7c0 | ![][shield:support-mm] |
-| Blizzy's Toolbar |  | works with | 1.7.6 |  | #7c69c0 | ![][shield:support-toolbar] |
-| Interstellar | KSPI | works with | 0.11 |  | #a62374 | ![][shield:support-kspi] |
-| Karbonite |  | works with | 0.1.1 |  | #ff8c00 | ![][shield:support-karbonite] |
-| ALCOR | ALCOR | works with | 0.9 |  | #299bc7 | ![][shield:support-alcor] |
-| USI Kolonization Systems | USI | works with | 0.19.3 |  | #34c566 | ![][shield:support-usi] |
-| Extraplanetary Launchpads | EPL | works with | 4.2.3 |  | #ff8c00 | ![][shield:support-epl] |
-
+|    Name   | Relationship | Min Version | Max Version |  Color  |             shield            |
+|:---------:|:------------:|:-----------:|:-----------:|:-------:|:-----------------------------:|
+|    KSP    |      for     |    0.23.5   |    0.24.x   | #bad455 |    ![][shield:support-ksp]    |
+|    RPM    |  works with  |    0.18.2   |             | #a31f34 |    ![][shield:support-rpm]    |
+|  Kethane  |  FAILS with  |             |    0.8.8    | #66ff00 |    ![][shield:support-ket]    |
+|  Kethane  |  works with  |   0.8.8.1   |             | #ff0000 |   ![][shield:support-ket-no]  |
+|    ORS    |  works with  |    1.1.0    |             | #000000 |    ![][shield:support-ors]    |
+|     MM    |   requires   |    2.2.1    |             | #40b7c0 |     ![][shield:support-mm]    |
+|  Toolbar  |  works with  |    1.7.6    |             | #7c69c0 |  ![][shield:support-toolbar]  |
+|    KSPI   |  works with  |     0.11    |             | #a62374 |    ![][shield:support-kspi]   |
+| Karbonite |  works with  |    0.1.1    |             | #ff8c00 | ![][shield:support-karbonite] |
+|   ALCOR   |  works with  |     0.9     |             | #299bc7 |   ![][shield:support-alcor]   |
+|    USI    |  works with  |    0.19.3   |             | #34c566 |    ![][shield:support-usi]    |
+|    EPL    |  works with  |    4.2.3    |             | #ff8c00 |    ![][shield:support-epl]    |
 ![][shield:gittip-tg-img]<br/>
 ![][shield:github-issues]<br/>
 
