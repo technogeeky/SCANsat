@@ -58,14 +58,14 @@
 [album:Bop]: https://imgur.com/a/EKn3b
 [album:Earth]: https://imgur.com/a/wXQt0
 [album:Background Scanning]: https://imgur.com/a/gpU1i
-[album:Getting Started \[No Toolbar\]]: https://imgur.com/a/3hX8B
-[album:[Optional] SCANsatRPM mapping the Mun]: https://imgur.com/a/X0B2Q
-[album:Getting Started [with Toolbar]]: https://imgur.com/a/4dZ4S
+[album:Getting Started \u005bNo Toolbar\u005d]: https://imgur.com/a/3hX8B
+[album:\u005bOptional\u005d SCANsatRPM mapping the Mun]: https://imgur.com/a/X0B2Q
+[album:Getting Started \u005bwith Toolbar\u005d]: https://imgur.com/a/4dZ4S
 [album:Logo]: https://imgur.com/a/cyRYi
-[album:[Settings]]: https://imgur.com/a/6fqWB
-[album:[Big Map] - Example Slope Map]: https://imgur.com/a/5LVR3
-[album:[Multi] Animated in VAB]: https://imgur.com/a/UOzwz
-[album:[Small Map] Incompatible Scanners]: https://imgur.com/a/8U1Dn
-[album:Been There Done That\u00a9 - [BTDT]]: https://imgur.com/a/hFW9Q
+[album:\u005bSettings\u005d]: https://imgur.com/a/6fqWB
+[album:\u005bBig Map\u005d - Example Slope Map]: https://imgur.com/a/5LVR3
+[album:\u005bMulti\u005d Animated in VAB]: https://imgur.com/a/UOzwz
+[album:\u005bSmall Map\u005d Incompatible Scanners]: https://imgur.com/a/8U1Dn
+[album:Been There Done That\u00a9 - \u005bBTDT\u005d]: https://imgur.com/a/hFW9Q
 [album:Unlimited (within reason) Zoom]: https://imgur.com/a/Mq4Kq
 
