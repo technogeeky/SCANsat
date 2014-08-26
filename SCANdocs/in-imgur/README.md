@@ -36,3 +36,36 @@
 [resource-iva]: http://i.imgur.com/iRo4kSA.png
 [resource-walkthrough]: http://i.imgur.com/HJLK1yi.gif
 
+[album:PartCatalog Icons]: https://imgur.com/a/zvcED
+[album:Logos and Avatars of Collaborators]: https://imgur.com/a/GGIHd
+[album:RasterPropMonitor]: https://imgur.com/a/s5bP5
+[album:Eeloo]: https://imgur.com/a/G7Sn1
+[album:Vall]: https://imgur.com/a/2iJbL
+[album:Tylo]: https://imgur.com/a/UNL7l
+[album:Pol]: https://imgur.com/a/uSrIb
+[album:Mun]: https://imgur.com/a/b328R
+[album:Moon]: https://imgur.com/a/f0nRZ
+[album:Moho]: https://imgur.com/a/UWA0P
+[album:Minmus]: https://imgur.com/a/kUdwM
+[album:Laythe]: https://imgur.com/a/RCusd
+[album:Kerbin]: https://imgur.com/a/dPv8a
+[album:Jool]: https://imgur.com/a/boyfT
+[album:Ike]: https://imgur.com/a/pRm8C
+[album:Gilly]: https://imgur.com/a/V8oNx
+[album:Eve]: https://imgur.com/a/i3LmZ
+[album:Duna]: https://imgur.com/a/7cLuf
+[album:Dres]: https://imgur.com/a/a4PHY
+[album:Bop]: https://imgur.com/a/EKn3b
+[album:Earth]: https://imgur.com/a/wXQt0
+[album:Background Scanning]: https://imgur.com/a/gpU1i
+[album:Getting Started [No Toolbar]]: https://imgur.com/a/3hX8B
+[album:[Optional] SCANsatRPM mapping the Mun]: https://imgur.com/a/X0B2Q
+[album:Getting Started [with Toolbar]]: https://imgur.com/a/4dZ4S
+[album:Logo]: https://imgur.com/a/cyRYi
+[album:[Settings]]: https://imgur.com/a/6fqWB
+[album:[Big Map] - Example Slope Map]: https://imgur.com/a/5LVR3
+[album:[Multi] Animated in VAB]: https://imgur.com/a/UOzwz
+[album:[Small Map] Incompatible Scanners]: https://imgur.com/a/8U1Dn
+[album:Been There Done That\u00a9 - [BTDT]]: https://imgur.com/a/hFW9Q
+[album:Unlimited (within reason) Zoom]: https://imgur.com/a/Mq4Kq
+
