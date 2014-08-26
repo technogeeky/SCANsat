@@ -58,7 +58,7 @@
 [album:Bop]: https://imgur.com/a/EKn3b
 [album:Earth]: https://imgur.com/a/wXQt0
 [album:Background Scanning]: https://imgur.com/a/gpU1i
-[album:Getting Started [No Toolbar]]: https://imgur.com/a/3hX8B
+[album:Getting Started \[No Toolbar\]]: https://imgur.com/a/3hX8B
 [album:[Optional] SCANsatRPM mapping the Mun]: https://imgur.com/a/X0B2Q
 [album:Getting Started [with Toolbar]]: https://imgur.com/a/4dZ4S
 [album:Logo]: https://imgur.com/a/cyRYi
