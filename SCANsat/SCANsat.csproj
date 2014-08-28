@@ -9,22 +9,23 @@
     <OutputType>Library</OutputType>
     <RootNamespace>SCANsat</RootNamespace>
     <AssemblyName>SCANsat</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <ReleaseVersion>1.0.8.0</ReleaseVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugType>none</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\GameData\SCANsat</OutputPath>
+    <OutputPath>..\..\..\GameData\SCANsat</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <additionalargs>-debug:full</additionalargs>
     <DefineConstants>DEBUG;</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <NoStdLib>true</NoStdLib>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
-    <OutputPath>..\..\GameData\SCANsat</OutputPath>
+    <OutputPath>..\..\..\GameData\SCANsat</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -39,6 +40,7 @@
         <Command type="Clean" command="bash -c 'for s in &quot;Plugins&quot; &quot;Flags&quot; &quot;Icons&quot; &quot;MM_Parts&quot; &quot;Parts&quot; &quot;Resources&quot;; do rm -r $s ; done'" workingdir="${TargetDir}" externalConsole="True" />
       </CustomCommands>
     </CustomCommands>
+    <NoStdLib>true</NoStdLib>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,8 +70,11 @@
     </MonoDevelop>
   </ProjectExtensions>
   <ItemGroup>
-    <Reference Include="OpenResourceSystem_1_1_0">
-      <HintPath>..\..\..\GameData\OpenResourceSystem\Plugins\OpenResourceSystem.dll</HintPath>
+    <Reference Include="System">
+      <HintPath>..\..\..\KSP_Data\Managed\System.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>..\..\..\KSP_Data\Managed\mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\KSP_Data\Managed\Assembly-CSharp.dll</HintPath>
@@ -77,8 +82,8 @@
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\KSP_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="System">
-      <HintPath>..\..\..\KSP_Data\Managed\System.dll</HintPath>
+    <Reference Include="OpenResourceSystem_1_1_0">
+      <HintPath>..\..\..\GameData\OpenResourceSystem\Plugins\OpenResourceSystem_1_1_0.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

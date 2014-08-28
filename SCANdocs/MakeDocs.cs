@@ -38,7 +38,7 @@ namespace SCANdocs
 			foreach (Match m in r.Matches(input)) {
 				var counter = 0;
 				foreach (Group g in m.Groups) {
-					if (counter == 0) {
+					if (counter == 0 || MakeDocs.meta.IsMatch(r.GroupNameFromNumber(counter))) {
 						counter++;
 						continue;
 					}
@@ -68,9 +68,12 @@ namespace SCANdocs
 
 		const string dotmd = "*.md";
 		const string dotbbcode = "*.bbcode";
-		const string indirs = "in-*";
-		const string templatedirs = "template-*";
-		const string outdirs = "out-*";
+		const string dotjson = "*.json";
+
+
+		const string indirs = "in";
+		const string templatedirs = "templates";
+		const string outdirs = "out";
 
 		public MakeDocs ()
 		{
@@ -79,6 +82,32 @@ namespace SCANdocs
 		public static Regex faq = new Regex(@"(?<indent> [\s]+) (?<li> (\*|\+|\-)) (?<qspace>[\s]+) (?<q>[^\n]+) (?<qn> [\n])  (?<indent> [\s]+) (?<li> (\*|\+|\-)) (?<aspace>[\s]+) (?<shortanswer> \*\*[^\*]*\*\*) (?<saspace>[\s]*)? (?<a>[^\n]+) (?<an> [\n])",nx);
 
 		public static Regex albums2refs = new Regex(@"(?<name>[^:]+):(?<id>[^\n]+)(?<n>[\n])",nx);
+
+		public static Regex albums = new Regex(
+			@"(?<id_> ""id"":(?<id>""[^\""]+""))                            (?:[^}{]+?)
+				(?<title_> ""title"":(?<title>""[^\""]+""|null))              (?:[^}{]+?)
+				(?<desc_> ""description"":(?<desc>""[^\""]+""|null))          (?:[^}{]+?)
+				(?<cover_> ""cover"":(?<cover>""[^\""]+""))                   (?:[^}{]+?)
+				(?<privacy_> ""privacy"":(?<privacy>""[^\""]+""))             (?:[^}{]+?)
+				(?<views_> ""views"":(?<views>[^\,]+))                        (?:[^}{]+?)
+				(?<link_> ""link"":(?<link>""[^\""]+""))                      (?:[^}{]+?)
+				(?<images_count_> ""images_count"":(?<images_count>[^\,]+))   (?:[^}{]+?)
+				(?<images_> ""images"":\[ [^\]]+ \])",
+			nx);
+
+		public static Regex album_imgs = new Regex(
+			@"(?<id_> ""id"":(?<id>""[^\""]+""))                              (?:[^}{]+?)
+				(?<title_> ""title"":(?<title>""[^\""]+""|null))                (?:[^}{]+?)
+				(?<desc_> ""description"":(?<desc>""[^\""]+""|null))            (?:[^}{]+?)
+				(?<type_> ""type"":(?<type>""[^\""]+""))                        (?:[^}{]+?)
+				(?<size_> ""size"":(?<size>[^\""]+))                            (?:[^}{]+?)
+				(?<views_> ""views"":(?<views>[^\,]+))                          (?:[^}{]+?)
+				(?<link_> ""link"":(?<link>""[^\""]+""))",
+			nx);
+
+		public static Regex meta = new Regex(@"_$");
+		public static Regex unescape = new Regex(@"(?<fwslash> \/)",nx); // -> /
+
 
 		public static Regex httpURL = new Regex(@"http://");
 		public static Regex imgREFs = new Regex(@"!   \[ (?<alttext>[^\]]* ) \] \[ (?<ref>[^\]]* ) \]",nx);
@@ -105,11 +134,12 @@ namespace SCANdocs
 
 				string[] mds = Directory.GetFiles (subdir, dotmd, recurse);
 				string[] bbcodes = Directory.GetFiles (subdir, dotbbcode, recurse);
+				string[] jsons = Directory.GetFiles (subdir, dotjson, recurse);
 
 				foreach (string file in mds) {
 					FileInfo file_di = new FileInfo (file);
 					Console.WriteLine ("[MD]\t{0}", file_di.RelFrom (subdir_di));
-					string fileRAT = File.ReadAllText (file);
+					//string fileRAT = File.ReadAllText (file);
 					string[] fileRAL = File.ReadAllLines (file);
 
 					foreach (string line in fileRAL) {
@@ -147,6 +177,24 @@ namespace SCANdocs
 				foreach (string file in bbcodes) {
 					FileInfo file_di = new FileInfo (file);
 					Console.WriteLine ("[BB]\t{0}", file_di.RelFrom (subdir_di));
+				}
+
+				foreach (string file in jsons) {
+					FileInfo file_di = new FileInfo (file);
+					Console.WriteLine ("[JSON]\t{0}", file_di.RelFrom (subdir_di));
+					//string fileRAT = File.ReadAllText (file);
+					string[] fileRAL = File.ReadAllLines (file);
+
+					foreach (string line in fileRAL) {
+						if (albums.IsMatch(line)) {
+							Console.WriteLine ("[JSON]  ALBUM:\t{0}", line);
+							var matches = albums.MatchesVerbose (line,"[JSON]  ALBUM:");
+						} 
+						if (album_imgs.IsMatch(line)) {
+							Console.WriteLine ("[JSON]  entry:\t{0}", line);
+							var matches = album_imgs.MatchesVerbose (line,"[JSON]  entry:");
+						}
+					}
 				}
 			}
 		}
@@ -209,6 +257,7 @@ namespace SCANdocs
 		{ 
 			Dictionary<string,string> AllRefLinks = new Dictionary<string,string> ();
 
+			Dictionary<string,MatchCollection[]> matches = new Dictionary<string,MatchCollection[]>();
 			MatchInputs ();
 
 			MatchTemplates ();

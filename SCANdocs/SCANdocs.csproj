@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>.</OutputPath>
+    <OutputPath>..\..\..\GameData\SCANsat</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -26,7 +26,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>.</OutputPath>
+    <OutputPath>..\..\..\GameData\SCANsat</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -36,42 +36,43 @@
   <ItemGroup>
     <None Include="README.md" />
     <None Include="SCANdocs.csproj" />
-    <None Include="in-faqs\README.md" />
-    <None Include="in-ideal-altitude-tables\README.md" />
-    <None Include="in-imgur\README.md" />
-    <None Include="in-other-mods\README.md" />
-    <None Include="in-scansat\README.md" />
-    <None Include="in-shields\README.md" />
-    <None Include="out-curseforge\README.md" />
-    <None Include="out-forum-dev\01-header-b.bbcode" />
-    <None Include="out-forum-dev\01-header.bbcode" />
-    <None Include="out-forum-dev\02-description.bbcode" />
-    <None Include="out-forum-dev\03-faq.bbcode" />
-    <None Include="out-forum-dev\04-changes.bbcode" />
-    <None Include="out-forum-dev\05-changes-older.bbcode" />
-    <None Include="out-forum-dev\06-known-issues.bbcode" />
-    <None Include="out-forum-dev\07-installation-instructions.bbcode" />
-    <None Include="out-forum-dev\08-gamedata-layout.bbcode" />
-    <None Include="out-forum-dev\09-gamedata-layout-legend.bbcode" />
-    <None Include="out-forum-dev\10-albums-upcoming.bbcode" />
-    <None Include="out-forum-dev\11-albums-general.bbcode" />
-    <None Include="out-forum-dev\12-mm-configs.bbcode" />
-    <None Include="out-forum-dev\README.md" />
-    <None Include="out-forum-release\01-header.bbcode" />
-    <None Include="out-forum-release\02-description.bbcode" />
-    <None Include="out-forum-release\03-faq.bbcode" />
-    <None Include="out-forum-release\04-changes.bbcode" />
-    <None Include="out-forum-release\05-changes-older.bbcode" />
-    <None Include="out-forum-release\06-known-issues.bbcode" />
-    <None Include="out-forum-release\07-installation-instructions.bbcode" />
-    <None Include="out-forum-release\08-gamedata-layout.bbcode" />
-    <None Include="out-forum-release\09-gamedata-layout-legend.bbcode" />
-    <None Include="out-forum-release\10-albums-general.bbcode" />
-    <None Include="out-forum-release\README.md" />
-    <None Include="out-github-dev\README.md" />
-    <None Include="out-github-release\README.md" />
-    <None Include="out-jenkins\README.md" />
-    <None Include="out-kerbalstuff\README.md" />
+    <None Include="in\faqs\README.md" />
+    <None Include="in\ideal-altitude-tables\README.md" />
+    <None Include="in\imgur\README.md" />
+    <None Include="in\imgur-albums\albums_all_data" />
+    <None Include="in\other-mods\README.md" />
+    <None Include="in\scansat\README.md" />
+    <None Include="in\shields\README.md" />
+    <None Include="out\curseforge\README.md" />
+    <None Include="out\github-dev\README.md" />
+    <None Include="out\github-release\README.md" />
+    <None Include="out\jenkins\README.md" />
+    <None Include="out\kerbalstuff\README.md" />
+    <None Include="templates\forum-dev\01-header-b.bbcode" />
+    <None Include="templates\forum-dev\01-header.bbcode" />
+    <None Include="templates\forum-dev\02-description.bbcode" />
+    <None Include="templates\forum-dev\03-faq.bbcode" />
+    <None Include="templates\forum-dev\04-changes.bbcode" />
+    <None Include="templates\forum-dev\05-changes-older.bbcode" />
+    <None Include="templates\forum-dev\06-known-issues.bbcode" />
+    <None Include="templates\forum-dev\07-installation-instructions.bbcode" />
+    <None Include="templates\forum-dev\08-gamedata-layout.bbcode" />
+    <None Include="templates\forum-dev\09-gamedata-layout-legend.bbcode" />
+    <None Include="templates\forum-dev\10-albums-upcoming.bbcode" />
+    <None Include="templates\forum-dev\11-albums-general.bbcode" />
+    <None Include="templates\forum-dev\12-mm-configs.bbcode" />
+    <None Include="templates\forum-dev\README.md" />
+    <None Include="templates\forum-release\01-header.bbcode" />
+    <None Include="templates\forum-release\02-description.bbcode" />
+    <None Include="templates\forum-release\03-faq.bbcode" />
+    <None Include="templates\forum-release\04-changes.bbcode" />
+    <None Include="templates\forum-release\05-changes-older.bbcode" />
+    <None Include="templates\forum-release\06-known-issues.bbcode" />
+    <None Include="templates\forum-release\07-installation-instructions.bbcode" />
+    <None Include="templates\forum-release\08-gamedata-layout.bbcode" />
+    <None Include="templates\forum-release\09-gamedata-layout-legend.bbcode" />
+    <None Include="templates\forum-release\10-albums-general.bbcode" />
+    <None Include="templates\forum-release\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MakeDocs.cs" />
