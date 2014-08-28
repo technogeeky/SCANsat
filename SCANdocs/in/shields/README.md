@@ -43,17 +43,18 @@ SCANsat ORS(dummy)	| ![][shield:jenkins-ors]
 
 [shield:support-ksp]:       http://img.shields.io/badge/for%20KSP-v0.23.5%20--%20v0.24.x-bad455.svg
 [shield:support-rpm]:       http://img.shields.io/badge/works%20with%20RPM-v0.18.2-a31f34.svg
-[shield:support-ket]:       http://img.shields.io/badge/works%20with%20Kethane-v0.8.8.1-66ff00.svg
-[shield:support-ket-no]:    http://img.shields.io/badge/FAILS%20with%20Kethane-v0.8.8-ff0000.svg
-[shield:support-ors]:       http://img.shields.io/badge/works%20with%20ORS-v1.1.0-000000.svg
+[shield:support-ors]:       http://img.shields.io/badge/works%20with%20ORS-v1.1.0%20or%20newer-000000.svg
 [shield:support-mm]:        http://img.shields.io/badge/works%20with%20MM-v2.2.1-40b7c0.svg
-[shield:support-toolbar]:   http://img.shields.io/badge/works%20with%20Blizzy's%20Toolbar-1.7.6-7c69c0.svg
 [shield:support-alcor]:     http://img.shields.io/badge/works%20with%20ALCOR-0.9-299bc7.svg
-[shield:support-kspi]:      http://img.shields.io/badge/works%20with%20Interstellar-0.11-a62374.svg
+[shield:support-kspi]:      http://img.shields.io/badge/works%20with%20KSPI-0.11-a62374.svg
 [shield:support-usi]:       http://img.shields.io/badge/works%20with%20USI-0.19.3-34c566.svg
-[shield:support-karbonite]: http://img.shields.io/badge/works%20with%20Karbonite-0.1.1-ff8c00.svg
 [shield:support-epl]:       http://img.shields.io/badge/works%20with%20EPL-4.2.3-0a214c.svg
 
+
+[shield:support-ket]:       http://img.shields.io/badge/works%20with%20Kethane-v0.8.8.1-66ff00.svg
+[shield:support-ket-no]:    http://img.shields.io/badge/FAILS%20with%20Kethane-v0.8.8-ff0000.svg
+[shield:support-karbonite]: http://img.shields.io/badge/works%20with%20Karbonite-0.1.1-ff8c00.svg
+[shield:support-toolbar]:   http://img.shields.io/badge/works%20with%20Toolbar-1.7.6-7c69c0.svg
 
 [shield:gittip-tg-img]:     http://img.shields.io/gittip/technogeeky.png
 [shield:github-issues]:     http://img.shields.io/github/issues/technogeeky/SCANsat.svg
