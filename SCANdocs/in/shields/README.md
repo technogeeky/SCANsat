@@ -5,7 +5,7 @@
 |  Kethane  |  works with  |   0.8.8.1   |             | #66ff00 |    ![][shield:support-ket]    |
 |  Kethane  |  FAILS with  |   0.8.8     |             | #ff0000 |   ![][shield:support-ket-no]  |
 |    ORS    |  works with  |    1.1.0    |             | #000000 |    ![][shield:support-ors]    |
-|     MM    |   requires   |    2.2.1    |             | #40b7c0 |     ![][shield:support-mm]    |
+|     MM    |  works with  |    2.2.1    |             | #40b7c0 |     ![][shield:support-mm]    |
 |  Toolbar  |  works with  |    1.7.6    |             | #7c69c0 |  ![][shield:support-toolbar]  |
 |    KSPI   |  works with  |     0.11    |             | #a62374 |    ![][shield:support-kspi]   |
 | Karbonite |  works with  |    0.1.1    |             | #ff8c00 | ![][shield:support-karbonite] |
@@ -46,7 +46,7 @@ SCANsat ORS(dummy)	| ![][shield:jenkins-ors]
 [shield:support-ket]:       http://img.shields.io/badge/works%20with%20Kethane-v0.8.8.1-66ff00.svg
 [shield:support-ket-no]:    http://img.shields.io/badge/FAILS%20with%20Kethane-v0.8.8-ff0000.svg
 [shield:support-ors]:       http://img.shields.io/badge/works%20with%20ORS-v1.1.0-000000.svg
-[shield:support-mm]:        http://img.shields.io/badge/requires%20MM-v2.2.1-40b7c0.svg
+[shield:support-mm]:        http://img.shields.io/badge/works%20with%20MM-v2.2.1-40b7c0.svg
 [shield:support-toolbar]:   http://img.shields.io/badge/works%20with%20Blizzy's%20Toolbar-1.7.6-7c69c0.svg
 [shield:support-alcor]:     http://img.shields.io/badge/works%20with%20ALCOR-0.9-299bc7.svg
 [shield:support-kspi]:      http://img.shields.io/badge/works%20with%20Interstellar-0.11-a62374.svg
