@@ -22,6 +22,5 @@ using A;
 [assembly: AssemblyInformationalVersion ("v8.0")]
 
 [assembly: KSPAssembly ("SCANsat", 0, 8)]
-[assembly: KSPAssemblyDependency("OpenResourceSystem", 1, 1)]
 
 

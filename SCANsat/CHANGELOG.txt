@@ -1,12 +1,12 @@
-Build 8 - 2014-08-02
+Build 8 - 2014-09-10
 ---------------------
 
 - Updated for KSP 0.24.2
 
 Resource Scanning:
 - Planetary resource overlay for big map
-	- Supports latest Kethane version - 0.8.8.1
-	- Supports ORS resources
+	- Supports latest Kethane version - 0.9
+	- Supports ORS resources with ORS v1.3
 	- All resources types can be scanned in the background; no need to remain in control of a vessel while scanning
 	- All resource scanning data is persistent; no different from standard SCANsat sensors
 	- Resource types controlled through the SCANsat settings menu
@@ -18,7 +18,7 @@ Resource Scanning:
 	
 - ORS resources
 	- Resources displayed on the big map with a place holder color overlay
-	- ORS plugin included with SCANsat package; compatible with any version of ORS included in other mods
+	- ORS plugin not included with SCANsat package; compatible with any version of ORS included in other mods
 	
 - Kethane resources
 	- Background scanning requires using the SCANsat modules added through the included Module Manager configs

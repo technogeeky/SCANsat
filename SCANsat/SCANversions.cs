@@ -13,7 +13,6 @@
 using System.Collections.Generic;
 using System;
 using System.Reflection;
-using System.Diagnostics;
 using System.Linq;
 using UnityEngine;
 
@@ -21,7 +20,7 @@ namespace SCANsat {
 	//[DebuggerDisplayAttribute("SCANsatVersion = {SCANsatVersion}")]
 	[KSPAddon (KSPAddon.Startup.MainMenu, true)]
 		internal class SCANversions: MonoBehaviour {
-		private string[] Assemblies = new string[6] { "OpenResourceSystem", "SCANsatKethane", "Kethane", "RasterPropMonitor", "MechJebRPM", "MechJeb2" };
+		private string[] Assemblies = new string[6] { "OpenResourceSystem_1_3_0", "SCANsatKethane", "Kethane", "RasterPropMonitor", "MechJebRPM", "MechJeb2" };
 		internal static string SCANsatVersion = "";
 		private List<AssemblyLog> assemblyList = new List<AssemblyLog> ();
 
