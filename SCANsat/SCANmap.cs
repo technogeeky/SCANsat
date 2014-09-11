@@ -415,48 +415,50 @@ namespace SCANsat
                     }
                     if (SCANcontroller.controller.map_ResourceOverlay && SCANcontroller.controller.globalOverlay)
                     {
-                        if (SCANcontroller.controller.resourceOverlayType == 0)
-                        {
+						if (SCANcontroller.controller.resourceOverlayType == 0 && SCANreflection.ORSFound)
+						{
 							if (SCANUtil.isCovered(lon, lat, data, resource.type)) //check our new resource coverage map
-                            {
-                                double amount = SCANUtil.ORSOverlay(lon, lat, body.flightGlobalsIndex, resource.name); //grab the resource amount for the current pixel
-                                double scalar = resource.ORS_Multiplier * resource.ORS_Scalar * resource.ORS_Threshold; //low cutoff value
-                                if (resource.linear) { //linear resources are measured on 0-100% scale
-                                    amount *= 100;
-                                    if (amount > scalar)
-                                    {
-                                        if (amount > 100) amount = 100;
-                                        pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, (float)(amount) / 100f), 0.3f); //vary color by resource amount
-                                    }
-                                    else pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
-                                }
-                                else { //log_scale resources are measured in ppm
-                                    amount *= 1000000;
-                                    if (amount > scalar)
-                                    {
-                                        if (amount > 50 * scalar) amount = 50 * scalar; //max cutoff value
-                                        pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, (float)(amount) / (float)(50 * scalar)), 0.8f); //vary color by resource amount
-                                    }
-                                    else pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
-                                }
-                            }
-                            else pix[i] = baseColor;
-                        }
-                        else if (SCANcontroller.controller.resourceOverlayType == 1) //Kethane overlay
-                        {
+							{
+								double amount = SCANUtil.ORSOverlay(lon, lat, body.flightGlobalsIndex, resource.name); //grab the resource amount for the current pixel
+								double scalar = resource.ORS_Multiplier * resource.ORS_Scalar * resource.ORS_Threshold; //low cutoff value
+								if (resource.linear)
+								{ //linear resources are measured on 0-100% scale
+									amount *= 100;
+									if (amount > scalar)
+									{
+										if (amount > 100) amount = 100;
+										pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, (float)(amount) / 100f), 0.3f); //vary color by resource amount
+									}
+									else pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
+								}
+								else
+								{ //log_scale resources are measured in ppm
+									amount *= 1000000;
+									if (amount > scalar)
+									{
+										if (amount > 25 * scalar) amount = 25 * scalar; //max cutoff value
+										pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, (float)(amount) / (float)(25 * scalar)), 0.8f); //vary color by resource amount
+									}
+									else pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
+								}
+							}
+							else pix[i] = baseColor;
+						}
+						else if (SCANcontroller.controller.resourceOverlayType == 1) //Kethane overlay
+						{
 							if (SCANUtil.isCovered(lon, lat, data, resource.type))
-                            {
+							{
 								int ilon = SCANUtil.icLON(lon);
 								int ilat = SCANUtil.icLAT(lat);
-                                float amount = data.kethaneValueMap[ilon, ilat]; //Fetch Kethane resource values from cached array
-                                if (amount <= 0) pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
-                                else
-                                {
-                                    pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, amount / resource.maxValue), 0.8f);
-                                }
-                            }
-                            else pix[i] = baseColor;
-                        }
+								float amount = data.kethaneValueMap[ilon, ilat]; //Fetch Kethane resource values from cached array
+								if (amount <= 0) pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
+								else
+								{
+									pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, amount / resource.maxValue), 0.8f);
+								}
+							}
+							else pix[i] = baseColor;
+						}
                         else pix[i] = baseColor;
                     }
                     else pix[i] = baseColor;
@@ -530,50 +532,50 @@ namespace SCANsat
                     }
                     if (SCANcontroller.controller.map_ResourceOverlay && SCANcontroller.controller.globalOverlay)
                     {
-                        if (SCANcontroller.controller.resourceOverlayType == 0)
-                        {
+						if (SCANcontroller.controller.resourceOverlayType == 0 && SCANreflection.ORSFound)
+						{
 							if (SCANUtil.isCovered(lon, lat, data, resource.type)) //check our new resource coverage map
-                            {
-                                double amount = SCANUtil.ORSOverlay(lon, lat, body.flightGlobalsIndex, resource.name); //grab the resource amount for the current pixel
-                                double scalar = resource.ORS_Multiplier * resource.ORS_Scalar * resource.ORS_Threshold;
-                                if (resource.linear)
-                                {
-                                    amount *= 100;
-                                    if (amount > scalar)
-                                    {
-                                        if (amount > 100) amount = 100; //max cutoff value
-                                        pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, (float)(amount) / 100f), 0.3f); //vary color by resource amount
-                                    }
-                                    else pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
-                                }
-                                else
-                                {
-                                    amount *= 1000000;
-                                    if (amount > scalar)
-                                    {
-                                        if (amount > 50 * scalar) amount = 50 * scalar; //max cutoff value
-                                        pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, (float)(amount) / (float)(50 * scalar)), 0.8f); //vary color by resource amount
-                                    }
-                                    else pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
-                                }
-                            }
-                            else pix[i] = baseColor;
-                        }
-                        else if (SCANcontroller.controller.resourceOverlayType == 1)
-                        {
+							{
+								double amount = SCANUtil.ORSOverlay(lon, lat, body.flightGlobalsIndex, resource.name); //grab the resource amount for the current pixel
+								double scalar = resource.ORS_Multiplier * resource.ORS_Scalar * resource.ORS_Threshold;
+								if (resource.linear)
+								{
+									amount *= 100;
+									if (amount > scalar)
+									{
+										if (amount > 100) amount = 100; //max cutoff value
+										pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, (float)(amount) / 100f), 0.3f); //vary color by resource amount
+									}
+									else pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
+								}
+								else
+								{
+									amount *= 1000000;
+									if (amount > scalar)
+									{
+										if (amount > 25 * scalar) amount = 25 * scalar; //max cutoff value
+										pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, (float)(amount) / (float)(25 * scalar)), 0.8f); //vary color by resource amount
+									}
+									else pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
+								}
+							}
+							else pix[i] = baseColor;
+						}
+						else if (SCANcontroller.controller.resourceOverlayType == 1)
+						{
 							if (SCANUtil.isCovered(lon, lat, data, resource.type))
-                            {
+							{
 								int ilon = SCANUtil.icLON(lon);
 								int ilat = SCANUtil.icLAT(lat);
-                                float amount = data.kethaneValueMap[ilon, ilat];
-                                if (amount <= 0) pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
-                                else
-                                {
-                                    pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, amount / resource.maxValue), 0.8f);
-                                }
-                            }
-                            else pix[i] = baseColor;
-                        }
+								float amount = data.kethaneValueMap[ilon, ilat];
+								if (amount <= 0) pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
+								else
+								{
+									pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, amount / resource.maxValue), 0.8f);
+								}
+							}
+							else pix[i] = baseColor;
+						}
                         else pix[i] = baseColor;
                     }
                     else pix[i] = baseColor;
@@ -650,50 +652,50 @@ namespace SCANsat
                     }
                     if (SCANcontroller.controller.map_ResourceOverlay && SCANcontroller.controller.globalOverlay)
                     {
-                        if (SCANcontroller.controller.resourceOverlayType == 0)
-                        {
+						if (SCANcontroller.controller.resourceOverlayType == 0 && SCANreflection.ORSFound)
+						{
 							if (SCANUtil.isCovered(lon, lat, data, resource.type)) //check our new resource coverage map
-                            {
-                                double amount = SCANUtil.ORSOverlay(lon, lat, body.flightGlobalsIndex, resource.name); //grab the resource amount for the current pixel
-                                double scalar = resource.ORS_Multiplier * resource.ORS_Scalar * resource.ORS_Threshold;
-                                if (resource.linear)
-                                {
-                                    amount *= 100;
-                                    if (amount > scalar)
-                                    {
-                                        if (amount > 100) amount = 100; //max cutoff value
-                                        pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, (float)(amount) / 100f), 0.3f); //vary color by resource amount
-                                    }
-                                    else pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
-                                }
-                                else
-                                {
-                                    amount *= 1000000;
-                                    if (amount > scalar)
-                                    {
-                                        if (amount > 50 * scalar) amount = 50 * scalar; //max cutoff value
-                                        pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, (float)(amount) / (float)(50 * scalar)), 0.8f); //vary color by resource amount
-                                    }
-                                    else pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
-                                }
-                            }
-                            else pix[i] = baseColor;
-                        }
-                        else if (SCANcontroller.controller.resourceOverlayType == 1)
-                        {
+							{
+								double amount = SCANUtil.ORSOverlay(lon, lat, body.flightGlobalsIndex, resource.name); //grab the resource amount for the current pixel
+								double scalar = resource.ORS_Multiplier * resource.ORS_Scalar * resource.ORS_Threshold;
+								if (resource.linear)
+								{
+									amount *= 100;
+									if (amount > scalar)
+									{
+										if (amount > 100) amount = 100; //max cutoff value
+										pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, (float)(amount) / 100f), 0.3f); //vary color by resource amount
+									}
+									else pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
+								}
+								else
+								{
+									amount *= 1000000;
+									if (amount > scalar)
+									{
+										if (amount > 25 * scalar) amount = 25 * scalar; //max cutoff value
+										pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, (float)(amount) / (float)(25 * scalar)), 0.8f); //vary color by resource amount
+									}
+									else pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
+								}
+							}
+							else pix[i] = baseColor;
+						}
+						else if (SCANcontroller.controller.resourceOverlayType == 1)
+						{
 							if (SCANUtil.isCovered(lon, lat, data, resource.type))
-                            {
+							{
 								int ilon = SCANUtil.icLON(lon);
 								int ilat = SCANUtil.icLAT(lat);
-                                float amount = data.kethaneValueMap[ilon, ilat];
-                                if (amount <= 0) pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
-                                else
-                                {
-                                    pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, amount / resource.maxValue), 0.8f);
-                                }
-                            }
-                            else pix[i] = baseColor;
-                        }
+								float amount = data.kethaneValueMap[ilon, ilat];
+								if (amount <= 0) pix[i] = palette.lerp(baseColor, palette.grey, 0.4f);
+								else
+								{
+									pix[i] = palette.lerp(baseColor, palette.lerp(resource.emptyColor, resource.fullColor, amount / resource.maxValue), 0.8f);
+								}
+							}
+							else pix[i] = baseColor;
+						}
                         else pix[i] = baseColor;
                     }
                     else pix[i] = baseColor;
