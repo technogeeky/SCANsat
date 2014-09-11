@@ -1431,27 +1431,24 @@ namespace SCANsat
 						info += " " + spotmap.mapscale.ToString ("F1") + "x";
 					if (SCANcontroller.controller.map_ResourceOverlay && SCANcontroller.controller.globalOverlay) //Adds selected resource amount to big map legend
 					{
-						if (SCANcontroller.controller.resourceOverlayType == 0) {
-							if (SCANUtil.isCovered(mlon, mlat, data, bigmap.resource.type))
-							{
-                                double amount = SCANUtil.ORSOverlay(mlon, mlat, bigmap.body.flightGlobalsIndex, bigmap.resource.name);
-                                string label;
-                                if (bigmap.resource.linear) //Make sure that ORS values are handled correctly based on which scale type they use
-                                    label = (amount * 100).ToString("N1") + " %";
-                                else 
-                                    label = (amount * 1000000).ToString("N1") + " ppm";
-								info += palette.colored(palette.magenta, "\n<b>" + bigmap.resource.name + ": " + label + "</b>");
+						if (SCANcontroller.controller.resourceOverlayType == 0 && SCANreflection.ORSFound) {
+							if (SCANUtil.isCovered(mlon, mlat, data, bigmap.resource.type)) {
+								double amount = SCANUtil.ORSOverlay(mlon, mlat, bigmap.body.flightGlobalsIndex, bigmap.resource.name);
+								string label;
+								if (bigmap.resource.linear) //Make sure that ORS values are handled correctly based on which scale type they use
+									label = (amount * 100).ToString("N1") + " %";
+								else
+									label = (amount * 1000000).ToString("N1") + " ppm";
+								info += palette.colored(bigmap.resource.fullColor, "\n<b>" + bigmap.resource.name + ": " + label + "</b>");
 							}
 						}
-                        else if (SCANcontroller.controller.resourceOverlayType == 1)
-                        {
-							if (SCANUtil.isCovered(mlon, mlat, data, bigmap.resource.type))
-                            {
-                                double amount = data.kethaneValueMap[SCANUtil.icLON(mlon), SCANUtil.icLAT(mlat)];
-                                if (amount < 0) amount = 0d;
-                                info += palette.colored(palette.xkcd_PukeGreen, "\n<b>" + bigmap.resource.name + ": " + amount.ToString("N1") + "</b>");
-                            }
-                        }
+						else if (SCANcontroller.controller.resourceOverlayType == 1) {
+							if (SCANUtil.isCovered(mlon, mlat, data, bigmap.resource.type)) {
+								double amount = data.kethaneValueMap[SCANUtil.icLON(mlon), SCANUtil.icLAT(mlat)];
+								if (amount < 0) amount = 0d;
+								info += palette.colored(bigmap.resource.fullColor, "\n<b>" + bigmap.resource.name + ": " + amount.ToString("N1") + "</b>");
+							}
+						}
 					}
 				} else {
 					info += " " + mlat.ToString ("F") + " " + mlon.ToString ("F"); // uncomment for debugging projections
