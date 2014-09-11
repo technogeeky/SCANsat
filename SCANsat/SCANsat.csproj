@@ -51,6 +51,7 @@
     <Compile Include="SCANmap.cs" />
     <Compile Include="SCANpalette.cs" />
     <Compile Include="SCANquickload.cs" />
+	<Compile Include="SCANreflection.cs" />
     <Compile Include="SCANsat.cs" />
     <Compile Include="SCANsatRPM.cs" />
     <Compile Include="SCANtoolbar.cs" />
@@ -81,9 +82,6 @@
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\KSP_Data\Managed\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="OpenResourceSystem_1_1_0">
-      <HintPath>..\..\..\GameData\OpenResourceSystem\Plugins\OpenResourceSystem_1_1_0.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
